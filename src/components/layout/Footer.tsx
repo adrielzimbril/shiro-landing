@@ -1,102 +1,65 @@
-import { Mail } from "lucide-react";
-import { Logo } from "@/components/shared/Logo";
-import { footerLinks } from "@/lib/data";
+"use client";
 
-export function Footer() {
+import React from "react";
+import { motion } from "motion/react";
+import { navItems } from "@/lib/data";
+
+export const Footer = () => {
   return (
-    <footer
-      id="contact"
-      className="relative border-t border-white/10 pt-16 pb-8"
-    >
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
-        <div className="mb-16 grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
-          <div className="col-span-2 md:col-span-4 lg:col-span-2">
-            <Logo />
-            <p className="mt-5 mb-6 max-w-xs text-sm leading-relaxed text-neutral-400">
-              Ashura builds brand platforms, campaigns, and communication
-              systems where AI becomes a strategic vector.
+    <footer className="py-20 relative z-10 border-t border-slate-100 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+          <div className="md:col-span-2">
+            <div className="text-2xl font-instrument italic text-slate-950 mb-6 flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center">
+                <div className="w-4 h-4 rounded-full border-2 border-white" />
+              </div>
+              Shiro.
+            </div>
+            <p className="text-slate-500 max-w-sm mb-8 leading-relaxed">
+              The unified intelligence layer for modern customer teams. Built for speed, precision, and human connection.
             </p>
-            <div className="flex items-center gap-4 text-neutral-400">
-              {[
-                { label: "X", name: "Twitter" },
-                { label: "IG", name: "Instagram" },
-                { label: "IN", name: "LinkedIn" },
-              ].map((item) => (
-                <a
-                  key={item.name}
-                  href="#contact"
-                  aria-label={item.name}
-                  className="grid h-8 w-8 place-items-center rounded-full bg-white/5 text-[11px] font-semibold transition hover:bg-white/10 hover:text-white"
-                >
-                  {item.label}
-                </a>
-              ))}
+            <div className="flex gap-4">
+               {['Twitter', 'LinkedIn', 'YouTube'].map(social => (
+                 <a key={social} href="#" className="text-xs font-bold text-slate-400 hover:text-violet-600 transition-colors uppercase tracking-widest">{social}</a>
+               ))}
             </div>
           </div>
+          
+          <div>
+            <h4 className="font-bold text-slate-950 mb-6 uppercase tracking-widest text-[10px]">Product</h4>
+            <ul className="space-y-4">
+              {navItems.map(item => (
+                <li key={item.label}>
+                  <a href={item.href} className="text-slate-500 hover:text-slate-950 transition-colors">{item.label}</a>
+                </li>
+              ))}
+              <li><a href="#" className="text-slate-500 hover:text-slate-950 transition-colors">Integrations</a></li>
+              <li><a href="#" className="text-slate-500 hover:text-slate-950 transition-colors">Enterprise</a></li>
+            </ul>
+          </div>
 
-          {Object.entries(footerLinks).map(([title, links]) => (
-            <div key={title} className="col-span-1">
-              <h3 className="mb-5 text-sm font-medium text-white">{title}</h3>
-              <ul className="space-y-3.5">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#contact"
-                      className="flex items-center gap-2 text-sm text-neutral-400 transition hover:text-white"
-                    >
-                      {link}
-                      {link === "Careers" ? (
-                        <span className="inline-flex items-center rounded-full bg-white/10 px-1.5 py-0.5 text-[10px] font-medium text-white ring-1 ring-white/20">
-                          We&apos;re hiring
-                        </span>
-                      ) : null}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              {title === "Connect" ? (
-                <div className="mt-6">
-                  <a
-                    href="mailto:hello@ashura.studio"
-                    className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-medium text-white shadow-sm ring-1 ring-white/15 transition hover:bg-white/15"
-                  >
-                    <Mail className="h-3.5 w-3.5" />
-                    hello@ashura.studio
-                  </a>
-                </div>
-              ) : null}
-            </div>
-          ))}
+          <div>
+            <h4 className="font-bold text-slate-950 mb-6 uppercase tracking-widest text-[10px]">Resources</h4>
+            <ul className="space-y-4">
+              <li><a href="#" className="text-slate-500 hover:text-slate-950 transition-colors">Documentation</a></li>
+              <li><a href="#" className="text-slate-500 hover:text-slate-950 transition-colors">API Reference</a></li>
+              <li><a href="#" className="text-slate-500 hover:text-slate-950 transition-colors">Security</a></li>
+              <li><a href="#" className="text-slate-500 hover:text-slate-950 transition-colors">Status</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 md:flex-row">
-          <div className="flex items-center gap-2">
-            <div className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-            </div>
-            <span className="cursor-pointer text-sm text-neutral-400 transition hover:text-white">
-              All systems operational
-            </span>
+        <div className="pt-12 border-t border-slate-50 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+            © 2024 Shiro Intelligence Inc. All rights reserved.
           </div>
-
-          <p className="text-sm text-neutral-400">
-            Copyright 2026 Ashura Studio. All rights reserved.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-6">
-            {["Privacy Policy", "Terms of Service", "Cookies"].map((link) => (
-              <a
-                key={link}
-                href="#contact"
-                className="text-sm text-neutral-400 transition hover:text-white"
-              >
-                {link}
-              </a>
-            ))}
+          <div className="flex gap-8">
+             <a href="#" className="text-[10px] font-bold text-slate-400 uppercase tracking-widest hover:text-slate-950">Privacy Policy</a>
+             <a href="#" className="text-[10px] font-bold text-slate-400 uppercase tracking-widest hover:text-slate-950">Terms of Service</a>
           </div>
         </div>
       </div>
     </footer>
   );
-}
+};

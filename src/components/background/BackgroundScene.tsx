@@ -4,6 +4,7 @@ import { AuroraBackground } from "@/components/background/aurora-background";
 import LightRays from "@/components/background/LightRays";
 import PixelBlast from "@/components/background/PixelBlast";
 import GradientBlinds from "@/components/background/GradientBlinds";
+import PixelGrid from "@/components/background/PixelGrid";
 
 export function BackgroundScene() {
   return (
@@ -16,81 +17,80 @@ export function BackgroundScene() {
         }}
       />
 
-      {/* Atmospheric Gradient Layer (GradientBlinds) - Inspired by Ashura */}
-      <div className="absolute inset-x-0 top-0 h-[1000px] opacity-60 [mask-image:linear-gradient(to_bottom,black,transparent)]">
+      {/* Atmospheric Gradient Layer (GradientBlinds) - Violet Dominant */}
+      <div className="absolute inset-x-0 top-0 h-[1200px] opacity-70 [mask-image:linear-gradient(to_bottom,black,transparent)]">
         <GradientBlinds
-          gradientColors={["#faf8ff", "#ddd6fe", "#a78bfa", "#7c3aed"]}
-          angle={18}
-          noise={0.15}
-          blindCount={16}
-          blindMinWidth={60}
-          spotlightRadius={0.8}
-          spotlightSoftness={1.1}
-          spotlightOpacity={0.6}
-          distortAmount={0.07}
+          gradientColors={["#faf8ff", "#ede9fe", "#ddd6fe", "#c4b5fd"]}
+          angle={15}
+          noise={0.1}
+          blindCount={20}
+          blindMinWidth={50}
+          spotlightRadius={0.7}
+          spotlightSoftness={1.2}
+          spotlightOpacity={0.5}
+          distortAmount={0.05}
           mixBlendMode="multiply"
         />
       </div>
 
-      {/* Aurora Background Layer - Softened for Light Mode */}
-      <div className="absolute inset-0 opacity-[0.18]">
+      {/* Aurora Background Layer - Softened Violet */}
+      <div className="absolute inset-0 opacity-[0.25]">
         <AuroraBackground className="h-full w-full">
           <div className="hidden" />
         </AuroraBackground>
       </div>
 
-      {/* Premium Gradient Blobs */}
-      <div className="absolute top-[-5%] left-[-10%] w-[60%] h-[60%] rounded-full bg-violet-300/30 blur-[120px] animate-pulse" />
-      <div className="absolute bottom-[-10%] right-[-5%] w-[50%] h-[50%] rounded-full bg-purple-200/25 blur-[100px] animate-pulse" style={{ animationDelay: '1.5s' }} />
+      {/* Premium Gradient Blobs - Purple/Violet accents */}
+      <div className="absolute top-[-5%] left-[-10%] w-[70%] h-[70%] rounded-full bg-violet-400/20 blur-[130px] animate-pulse" />
+      <div className="absolute bottom-[-15%] right-[-5%] w-[60%] h-[60%] rounded-full bg-purple-300/15 blur-[110px] animate-pulse" style={{ animationDelay: '2s' }} />
 
-      {/* Pixel Grid Layer - Subtle and clean */}
-      <div className="absolute inset-0 opacity-[0.07]">
-        <div 
-          className="h-full w-full"
-          style={{
-            backgroundImage: "radial-gradient(circle at 1px 1px, #7c3aed 1.2px, transparent 0)",
-            backgroundSize: "40px 40px"
-          }}
+      {/* Pixel Grid Layer - Precise and clean */}
+      <div className="absolute inset-0 opacity-[0.12]">
+        <PixelGrid 
+          dotSize={1.5}
+          gap={32}
+          color="#8b5cf6"
+          opacity={0.8}
         />
       </div>
 
-      {/* Light Rays Layer - Ashura Style */}
-      <div className="absolute inset-x-0 top-0 h-screen opacity-35">
+      {/* Light Rays Layer - Elegant focus */}
+      <div className="absolute inset-x-0 top-0 h-screen opacity-40">
         <LightRays
           raysOrigin="top-center"
-          raysColor="#a78bfa"
-          raysSpeed={0.5}
-          lightSpread={0.8}
-          rayLength={1.8}
-          fadeDistance={0.9}
-          saturation={1.4}
+          raysColor="#8b5cf6"
+          raysSpeed={0.4}
+          lightSpread={0.7}
+          rayLength={2.0}
+          fadeDistance={0.8}
+          saturation={1.5}
           followMouse
-          mouseInfluence={0.05}
-          noiseAmount={0.02}
-          distortion={0.06}
+          mouseInfluence={0.04}
+          noiseAmount={0.015}
+          distortion={0.05}
         />
       </div>
 
-      {/* Subtle Pixel Blast for edge detail */}
-      <div className="absolute inset-0 opacity-[0.03]">
+      {/* Subtle Pixel Blast for motion detail */}
+      <div className="absolute inset-0 opacity-[0.04]">
         <PixelBlast
           variant="square"
-          pixelSize={2}
+          pixelSize={3}
           color="#7c3aed"
-          patternScale={2}
-          patternDensity={0.15}
+          patternScale={1.5}
+          patternDensity={0.12}
           enableRipples
-          rippleSpeed={0.15}
-          rippleThickness={0.05}
-          rippleIntensityScale={0.3}
-          speed={0.005}
+          rippleSpeed={0.12}
+          rippleThickness={0.04}
+          rippleIntensityScale={0.25}
+          speed={0.004}
           transparent
-          edgeFade={0.5}
+          edgeFade={0.6}
         />
       </div>
       
       {/* Soft Vignette/Fade to Bottom */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#faf8ff]/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#faf8ff]/90" />
     </div>
   );
 }
