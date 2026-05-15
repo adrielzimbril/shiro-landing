@@ -6,7 +6,7 @@ export const Problem = () => {
     
       <div className="flex flex-col z-10 w-full relative gap-y-16">
     
-        <!-- Section Intro -->
+        {/* Section Intro */}
     
         <div className="max-w-3xl">
     
@@ -31,11 +31,11 @@ export const Problem = () => {
     
         </div>
     
-        <!-- Problem Cards -->
+        {/* Problem Cards */}
     
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
     
-          <!-- Problem Card 01 -->
+          {/* Problem Card 01 */}
     
           <div className="group flex flex-col gap-4 rounded-[2rem] bg-white/62 border border-white p-6 shadow-[0_10px_28px_-20px_rgba(15,23,42,0.24),inset_0_1px_0_white] hover:-translate-y-1 hover:bg-white/82 transition-all duration-300">
     
@@ -63,7 +63,7 @@ export const Problem = () => {
     
           </div>
     
-          <!-- Problem Card 02 -->
+          {/* Problem Card 02 */}
     
           <div className="group flex flex-col gap-4 rounded-[2rem] bg-white/62 border border-white p-6 shadow-[0_10px_28px_-20px_rgba(15,23,42,0.24),inset_0_1px_0_white] hover:-translate-y-1 hover:bg-white/82 transition-all duration-300">
     
@@ -91,7 +91,7 @@ export const Problem = () => {
     
           </div>
     
-          <!-- Problem Card 03 -->
+          {/* Problem Card 03 */}
     
           <div className="group flex flex-col gap-4 rounded-[2rem] bg-white/62 border border-white p-6 shadow-[0_10px_28px_-20px_rgba(15,23,42,0.24),inset_0_1px_0_white] hover:-translate-y-1 hover:bg-white/82 transition-all duration-300">
     
@@ -119,7 +119,7 @@ export const Problem = () => {
     
           </div>
     
-          <!-- Problem Card 04 -->
+          {/* Problem Card 04 */}
     
           <div className="group flex flex-col gap-4 rounded-[2rem] bg-white/62 border border-white p-6 shadow-[0_10px_28px_-20px_rgba(15,23,42,0.24),inset_0_1px_0_white] hover:-translate-y-1 hover:bg-white/82 transition-all duration-300">
     
@@ -149,11 +149,11 @@ export const Problem = () => {
     
         </div>
     
-        <!-- Transformation Block -->
+        {/* Transformation Block */}
     
         <div className="overflow-hidden min-h-[560px] lg:min-h-[620px] rounded-[2.75rem] bg-gradient-to-b from-[#172033] to-[#101827] text-white border border-white/10 relative shadow-[0_40px_90px_-45px_rgba(15,23,42,0.78),inset_0_1px_0_rgba(255,255,255,0.14)]">
     
-          <!-- Dark Block Background Texture -->
+          {/* Dark Block Background Texture */}
     
           <div className="absolute inset-0 opacity-[0.10]" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
           </div>
@@ -166,7 +166,7 @@ export const Problem = () => {
     
           <div className="relative grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] min-h-[560px] lg:min-h-[620px] h-full">
     
-            <!-- Transformation Copy -->
+            {/* Transformation Copy */}
     
             <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16">
     
@@ -248,19 +248,19 @@ export const Problem = () => {
     
             </div>
     
-            <!-- Input-to-Action Pipeline Visual -->
+            {/* Input-to-Action Pipeline Visual */}
     
             <div className="relative flex items-center justify-center p-6 md:p-10 lg:pr-14">
     
-              <!-- Pipeline Shell -->
+              {/* Pipeline Shell */}
     
               <div className="relative w-full max-w-2xl rounded-[2.25rem] bg-white/[0.065] border border-white/10 p-4 md:p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_30px_70px_-40px_rgba(0,0,0,0.72)] backdrop-blur-sm">
     
-                <!-- Inner Light Panel -->
+                {/* Inner Light Panel */}
     
                 <div className="rounded-[1.85rem] bg-gradient-to-b from-white to-slate-100 text-slate-900 border border-white/80 overflow-hidden shadow-[0_18px_50px_-30px_rgba(0,0,0,0.55),inset_0_1px_0_white]">
     
-                  <!-- Panel Top Bar -->
+                  {/* Panel Top Bar */}
     
                   <div className="px-5 py-4 flex items-center justify-between border-b border-slate-200/80">
     
@@ -282,11 +282,11 @@ export const Problem = () => {
     
                   </div>
     
-                  <!-- Pipeline Content -->
+                  {/* Pipeline Content */}
     
                   <div className="p-5 md:p-6">
     
-                    <!-- Pipeline Header -->
+                    {/* Pipeline Header */}
     
                     <div className="flex items-start justify-between gap-4 mb-6">
     
@@ -314,11 +314,11 @@ export const Problem = () => {
     
                     </div>
     
-                    <!-- Pipeline Grid -->
+                    {/* Pipeline Grid */}
     
                     <div className="grid md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-5 items-stretch">
     
-                      <!-- Inputs Column -->
+                      {/* Inputs Column */}
     
                       <div className="rounded-[1.5rem] bg-slate-50 border border-slate-200 p-4 shadow-[inset_0_1px_0_white]">
     
@@ -330,7 +330,7 @@ export const Problem = () => {
     
                         <div className="space-y-3">
     
-                          <!-- Input 01 -->
+                          {/* Input 01 */}
     
                           <div className="flex items-center gap-3 rounded-2xl bg-white border border-slate-200 px-3 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
     
@@ -358,7 +358,7 @@ export const Problem = () => {
     
                           </div>
     
-                          <!-- Input 02 -->
+                          {/* Input 02 */}
     
                           <div className="flex items-center gap-3 rounded-2xl bg-white border border-slate-200 px-3 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
     
@@ -386,7 +386,7 @@ export const Problem = () => {
     
                           </div>
     
-                          <!-- Input 03 -->
+                          {/* Input 03 */}
     
                           <div className="flex items-center gap-3 rounded-2xl bg-white border border-slate-200 px-3 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
     
@@ -414,7 +414,7 @@ export const Problem = () => {
     
                           </div>
     
-                          <!-- Input 04 -->
+                          {/* Input 04 */}
     
                           <div className="flex items-center gap-3 rounded-2xl bg-white border border-slate-200 px-3 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
     
@@ -446,7 +446,7 @@ export const Problem = () => {
     
                       </div>
     
-                      <!-- Connector Column -->
+                      {/* Connector Column */}
     
                       <div className="hidden md:flex flex-col items-center justify-center gap-3">
     
@@ -462,7 +462,7 @@ export const Problem = () => {
     
                       </div>
     
-                      <!-- Outputs Column -->
+                      {/* Outputs Column */}
     
                       <div className="rounded-[1.5rem] bg-gradient-to-b from-[#172033] to-[#101827] text-white border border-white/10 p-4 shadow-[0_12px_30px_-20px_rgba(15,23,42,0.65),inset_0_1px_0_rgba(255,255,255,0.1)]">
     
@@ -584,7 +584,7 @@ export const Problem = () => {
     
                     </div>
     
-                    <!-- Bottom Summary Bar -->
+                    {/* Bottom Summary Bar */}
     
                     <div className="mt-4 rounded-2xl bg-white border border-slate-200 px-4 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
     
@@ -632,7 +632,7 @@ export const Problem = () => {
     
                 </div>
     
-                <!-- Floating Mini Status Card -->
+                {/* Floating Mini Status Card */}
     
                 <div className="hidden md:block absolute -right-3 top-16 rounded-2xl bg-white/90 backdrop-blur border border-white px-4 py-3 shadow-[0_18px_38px_-20px_rgba(15,23,42,0.45),inset_0_1px_0_white]">
     
@@ -664,7 +664,7 @@ export const Problem = () => {
     
                 </div>
     
-                <!-- Floating Mini Status Card -->
+                {/* Floating Mini Status Card */}
     
                 <div className="hidden md:block absolute -left-6 -bottom-4 rounded-2xl bg-white/90 backdrop-blur border border-white px-4 py-3 shadow-[0_18px_38px_-20px_rgba(15,23,42,0.45),inset_0_1px_0_white]">
     
@@ -700,7 +700,7 @@ export const Problem = () => {
     
             </div>
     
-            <!-- End Pipeline Visual -->
+            {/* End Pipeline Visual */}
     
           </div>
     

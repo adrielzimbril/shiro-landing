@@ -26,7 +26,7 @@ export const Hero = () => {
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 rounded-full bg-white/75 border border-white px-3.5 py-2 shadow-[0_6px_18px_-12px_rgba(15,23,42,0.3),inset_0_1px_0_white] mb-10 transition-all hover:bg-white">
               <span className="w-7 h-7 rounded-full bg-gradient-to-b from-blue-50 to-white border border-blue-100 shadow-[inset_0_1px_0_white] flex items-center justify-center">
-                <iconify-icon icon="solar:stars-minimalistic-linear" style="stroke-width: 1.5;" className="text-sm text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:stars-minimalistic-linear" style={{"strokeWidth":"1.5"}} className="text-sm text-blue-500"></iconify-icon>
               </span>
               <span className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-slate-500">
                 PREMIUM PERSONAL AI
@@ -53,10 +53,10 @@ export const Hero = () => {
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
               <a href="#pricing" className="group w-full sm:w-auto flex items-center justify-center gap-3 bg-gradient-to-b from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 transition-all text-white text-sm font-normal rounded-full px-8 py-4 shadow-[0_10px_24px_rgba(59,130,246,0.28),inset_0_1px_0_rgba(255,255,255,0.35)] hover:-translate-y-0.5 active:translate-y-0 border border-blue-700">
                 <span>Start Free Trial</span>
-                <iconify-icon icon="solar:arrow-right-linear" style="stroke-width: 1.5;" className="text-lg group-hover:translate-x-1 transition-transform"></iconify-icon>
+                <iconify-icon icon="solar:arrow-right-linear" style={{"strokeWidth":"1.5"}} className="text-lg group-hover:translate-x-1 transition-transform"></iconify-icon>
               </a>
               <a href="#workflow" className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white hover:bg-slate-50 transition-all text-slate-900 text-sm font-normal rounded-full px-8 py-4 border border-slate-200 shadow-[0_4px_12px_rgba(15,23,42,0.05),inset_0_1px_0_white] hover:-translate-y-0.5 active:translate-y-0">
-                <iconify-icon icon="solar:play-circle-linear" style="stroke-width: 1.5;" className="text-xl text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:play-circle-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-500"></iconify-icon>
                 <span>See How It Works</span>
               </a>
             </div>
@@ -64,17 +64,17 @@ export const Hero = () => {
             {/* Key Benefits Labels */}
             <div className="mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-slate-500 font-light">
               <div className="flex items-center gap-2">
-                <iconify-icon icon="solar:shield-check-linear" style="stroke-width: 1.5;" className="text-base text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:shield-check-linear" style={{"strokeWidth":"1.5"}} className="text-base text-blue-500"></iconify-icon>
                 <span>Private by design</span>
               </div>
               <div className="hidden sm:block w-1 h-1 rounded-full bg-slate-300"></div>
               <div className="flex items-center gap-2">
-                <iconify-icon icon="solar:smartphone-2-linear" style="stroke-width: 1.5;" className="text-base text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:smartphone-2-linear" style={{"strokeWidth":"1.5"}} className="text-base text-blue-500"></iconify-icon>
                 <span>Works across all devices</span>
               </div>
               <div className="hidden sm:block w-1 h-1 rounded-full bg-slate-300"></div>
               <div className="flex items-center gap-2">
-                <iconify-icon icon="solar:bolt-circle-linear" style="stroke-width: 1.5;" className="text-base text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:bolt-circle-linear" style={{"strokeWidth":"1.5"}} className="text-base text-blue-500"></iconify-icon>
                 <span>Built for busy minds</span>
               </div>
             </div>
@@ -95,7 +95,7 @@ export const Hero = () => {
               <div className="aura-float-bubble absolute -right-4 top-12 z-20 rounded-2xl bg-white/90 backdrop-blur border border-white px-4 py-3 shadow-[0_18px_38px_-20px_rgba(15,23,42,0.45),inset_0_1px_0_white]" style={{ animationDelay: '0s' }}>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
-                    <iconify-icon icon="solar:bell-linear" style="stroke-width: 1.5;" className="text-lg text-blue-500"></iconify-icon>
+                    <iconify-icon icon="solar:bell-linear" style={{"strokeWidth":"1.5"}} className="text-lg text-blue-500"></iconify-icon>
                   </div>
                   <div>
                     <p className="text-xs text-slate-900 font-normal">Follow-up found</p>
@@ -108,7 +108,7 @@ export const Hero = () => {
               <div className="aura-float-bubble absolute -right-8 top-[35%] z-20 rounded-2xl bg-white/90 backdrop-blur border border-white px-4 py-3 shadow-[0_18px_38px_-20px_rgba(15,23,42,0.45),inset_0_1px_0_white]" style={{ animationDelay: '-3s' }}>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
-                    <iconify-icon icon="solar:document-text-linear" style="stroke-width: 1.5;" className="text-lg text-blue-500"></iconify-icon>
+                    <iconify-icon icon="solar:document-text-linear" style={{"strokeWidth":"1.5"}} className="text-lg text-blue-500"></iconify-icon>
                   </div>
                   <div>
                     <p className="text-xs text-slate-900 font-normal">Summary ready</p>
@@ -121,7 +121,7 @@ export const Hero = () => {
               <div className="aura-float-bubble absolute -right-2 bottom-[26%] z-20 rounded-2xl bg-white/90 backdrop-blur border border-white px-4 py-3 shadow-[0_18px_38px_-20px_rgba(15,23,42,0.45),inset_0_1px_0_white]" style={{ animationDelay: '-1.5s' }}>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
-                    <iconify-icon icon="solar:calendar-mark-linear" style="stroke-width: 1.5;" className="text-lg text-blue-500"></iconify-icon>
+                    <iconify-icon icon="solar:calendar-mark-linear" style={{"strokeWidth":"1.5"}} className="text-lg text-blue-500"></iconify-icon>
                   </div>
                   <div>
                     <p className="text-xs text-slate-900 font-normal">Focus block saved</p>
@@ -134,7 +134,7 @@ export const Hero = () => {
               <div className="aura-float-bubble absolute left-6 -bottom-6 z-20 rounded-2xl bg-white/90 backdrop-blur border border-white px-4 py-3 shadow-[0_18px_38px_-20px_rgba(15,23,42,0.45),inset_0_1px_0_white]" style={{ animationDelay: '-5.2s' }}>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
-                    <iconify-icon icon="solar:letter-linear" style="stroke-width: 1.5;" className="text-lg text-blue-500"></iconify-icon>
+                    <iconify-icon icon="solar:letter-linear" style={{"strokeWidth":"1.5"}} className="text-lg text-blue-500"></iconify-icon>
                   </div>
                   <div>
                     <p className="text-xs text-slate-900 font-normal">Reply drafted</p>
@@ -172,7 +172,7 @@ export const Hero = () => {
                       </h3>
                     </div>
                     <div className="w-11 h-11 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shadow-[inset_0_1px_0_white]">
-                      <iconify-icon icon="solar:stars-linear" style="stroke-width: 1.5;" className="text-2xl"></iconify-icon>
+                      <iconify-icon icon="solar:stars-linear" style={{"strokeWidth":"1.5"}} className="text-2xl"></iconify-icon>
                     </div>
                   </div>
 
@@ -183,7 +183,7 @@ export const Hero = () => {
                     <div className="rounded-[1.5rem] bg-white border border-slate-200 p-4 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white] group hover:border-blue-100 transition-colors">
                       <div className="flex items-start gap-4">
                         <div className="mt-0.5 w-9 h-9 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-500">
-                          <iconify-icon icon="solar:microphone-linear" style="stroke-width: 1.5;" className="text-xl"></iconify-icon>
+                          <iconify-icon icon="solar:microphone-linear" style={{"strokeWidth":"1.5"}} className="text-xl"></iconify-icon>
                         </div>
                         <div>
                           <p className="text-xs font-normal text-slate-950">Captured idea</p>
@@ -198,7 +198,7 @@ export const Hero = () => {
                     <div className="rounded-[1.5rem] bg-white border border-slate-200 p-4 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white] group hover:border-blue-100 transition-colors">
                       <div className="flex items-start gap-4">
                         <div className="mt-0.5 w-9 h-9 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-500">
-                          <iconify-icon icon="solar:checklist-minimalistic-linear" style="stroke-width: 1.5;" className="text-xl"></iconify-icon>
+                          <iconify-icon icon="solar:checklist-minimalistic-linear" style={{"strokeWidth":"1.5"}} className="text-xl"></iconify-icon>
                         </div>
                         <div className="flex-1">
                           <div className="flex items-center justify-between gap-3 mb-2">
@@ -236,7 +236,7 @@ export const Hero = () => {
                             <p className="mt-2 text-xl font-light tracking-tight text-slate-950">10:30–12:00</p>
                           </div>
                           <div className="w-8 h-8 rounded-lg bg-white/80 border border-white flex items-center justify-center shadow-[inset_0_1px_0_white]">
-                            <iconify-icon icon="solar:shield-check-linear" style="stroke-width: 1.5;" className="text-xl text-blue-500"></iconify-icon>
+                            <iconify-icon icon="solar:shield-check-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-500"></iconify-icon>
                           </div>
                         </div>
                         <div className="relative mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/70 border border-white px-2.5 py-1 text-[9px] text-slate-500 shadow-[inset_0_1px_0_white]">
@@ -248,7 +248,7 @@ export const Hero = () => {
                       {/* Mini Card 02 */}
                       <div className="rounded-[1.5rem] bg-gradient-to-b from-blue-400 to-blue-600 text-white border border-blue-700 p-4 shadow-[0_10px_24px_-14px_rgba(59,130,246,0.55),inset_0_1px_0_rgba(255,255,255,0.30)]">
                         <div className="flex items-center gap-2 mb-2">
-                          <iconify-icon icon="solar:chat-round-dots-linear" style="stroke-width: 1.5;" className="text-base text-blue-100"></iconify-icon>
+                          <iconify-icon icon="solar:chat-round-dots-linear" style={{"strokeWidth":"1.5"}} className="text-base text-blue-100"></iconify-icon>
                           <p className="text-[10px] text-blue-100 font-light">Suggested reply</p>
                         </div>
                         <p className="text-xs leading-5 font-light">
