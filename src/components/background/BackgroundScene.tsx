@@ -4,7 +4,7 @@ import { AuroraBackground } from "@/components/background/aurora-background";
 import LightRays from "@/components/background/LightRays";
 import PixelBlast from "@/components/background/PixelBlast";
 import GradientBlinds from "@/components/background/GradientBlinds";
-import PixelGrid from "@/components/background/PixelGrid";
+import { PixelGrid } from "@/components/background/PixelGrid";
 
 export function BackgroundScene() {
   return (

@@ -2,58 +2,55 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { navItems } from "@/lib/data";
+import { Orbit } from "lucide-react";
 
 export const Navbar = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-4 px-6">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Brand */}
+    <header className="sticky top-0 z-40 border-b border-black/5 bg-[#fafafa]/90 backdrop-blur-xl">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
         <motion.a 
-          href="/"
+          href="#" 
+          className="flex items-center gap-2"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex items-center gap-2 group"
         >
-          <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-violet-500/20 group-hover:scale-110 transition-transform duration-300">
-            S
-          </div>
-          <span className="text-xl font-bold tracking-tight text-slate-900 font-instrument">
+          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-violet-600 text-white shadow-lg shadow-violet-500/20">
+            <Orbit className="h-4 w-4" />
+          </span>
+          <span className="text-base font-semibold tracking-tight font-sans text-[#17191f]">
             Shiro
           </span>
         </motion.a>
 
-        {/* Desktop Links */}
         <motion.div 
+          className="hidden items-center gap-10 md:flex"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="hidden md:flex items-center gap-8 bg-white/50 backdrop-blur-xl border border-white/80 rounded-full px-8 py-3 shadow-sm"
         >
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-sm font-medium text-slate-600 hover:text-violet-600 transition-colors"
-            >
-              {item.label}
-            </a>
-          ))}
+          <a href="#features" className="text-sm font-medium text-black/60 hover:text-black transition-colors font-sans">
+            Features
+          </a>
+          <a href="#workflow" className="text-sm font-medium text-black/60 hover:text-black transition-colors font-sans">
+            Workflow
+          </a>
+          <a href="#reviews" className="text-sm font-medium text-black/60 hover:text-black transition-colors font-sans">
+            Reviews
+          </a>
         </motion.div>
 
-        {/* Actions */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex items-center gap-3"
         >
-          <button className="hidden sm:block text-sm font-semibold text-slate-700 hover:text-violet-600 transition-colors px-4 py-2">
-            Log in
-          </button>
-          <button className="bg-slate-950 text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-slate-800 transition-all shadow-md active:scale-95">
-            Book a Demo
-          </button>
+          <a 
+            href="#contact" 
+            className="rounded-full border border-black/15 bg-white px-4 py-2 text-sm font-semibold text-[#17191f] shadow-sm hover:bg-violet-50 hover:border-violet-200 transition-all font-sans"
+          >
+            Book intro
+          </a>
         </motion.div>
       </nav>
     </header>
   );
 };
+
