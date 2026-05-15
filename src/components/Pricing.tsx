@@ -1,11 +1,11 @@
+"use client";
 import React from 'react';
+
 
 export const Pricing = () => {
   return (
     <section id="pricing" className="max-w-7xl mx-auto px-6 py-20">
 
-  {/* Section Intro */}
-  
   <div className="text-center max-w-5xl mx-auto mb-14">
   
     <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-500 mb-4">
@@ -16,17 +16,17 @@ export const Pricing = () => {
   
     <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-slate-950 leading-[1.05] max-w-5xl mx-auto">
   
-      Choose the plan
+      Start free. Upgrade
   
-      <span className="block">that fits your workflow.</span>
+      <span className="block">when you’re ready.</span>
   
     </h2>
   
     <p className="mt-6 text-base md:text-lg leading-8 text-slate-600 font-light max-w-3xl mx-auto">
   
-      Start simple, upgrade when your context grows, and keep the same calm workspace
+      Every plan gives you a calmer, more organized day. The more context Shiro
   
-      as your notes, projects, meetings, and priorities expand.
+      captures, the more powerful your daily brief becomes.
   
     </p>
   
@@ -40,7 +40,7 @@ export const Pricing = () => {
     
     
     
-        <input type="checkbox" id="toggle-checkbox" className="sr-only" onchange="togglePricing()" />
+        <input type="checkbox" id="toggle-checkbox" className="sr-only" onChange={() => {}} />
     
         {/* Toggle Pill */}
     

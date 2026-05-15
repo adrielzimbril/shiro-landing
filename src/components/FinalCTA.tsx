@@ -10,16 +10,16 @@ export const FinalCTA = () => {
     </div>
 
     <p className="relative font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-500 mb-3">
-      FINAL STEP
+      YOUR FIRST STEP
     </p>
 
     <h2 className="relative text-3xl md:text-4xl font-normal tracking-tight text-slate-950 leading-[1.08]">
-      Less organizing.
-      <span className="block">More moving forward.</span>
+      Tomorrow starts tonight.
+      <span className="block">Let Shiro handle the rest.</span>
     </h2>
 
     <p className="relative mt-4 text-sm md:text-base leading-7 text-slate-600 font-light">
-      Once your context is captured, SHIRO helps turn it into a calmer tomorrow.
+      Stop planning to plan. Give Shiro five minutes tonight, wake up tomorrow with a clear head.
     </p>
   </div>
 
@@ -85,28 +85,28 @@ export const FinalCTA = () => {
         <span className="w-1.5 h-1.5 rounded-full bg-white shadow-[0_0_0_5px_rgba(255,255,255,0.14)]"></span>
 
         <span className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-50">
-          READY WHEN YOUR DAY GETS MESSY
+          YOUR AI ASSISTANT IS WAITING
         </span>
       </div>
 
       <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-white leading-[1.05] max-w-5xl mx-auto">
-        Start tomorrow with
-        <span className="block">less scattered context.</span>
+        No more scattered mornings.
+        <span className="block">No more procrastinated days.</span>
       </h2>
 
       <p className="mt-6 text-base md:text-lg leading-8 text-blue-50/90 font-light max-w-3xl mx-auto">
-        Capture what happens, keep your priorities visible, and let SHIRO turn messy information
-        into summaries, reminders, follow-ups, and next actions you can trust.
+        Shiro wakes up before you do. Your priorities, reminders, and daily plan are ready the moment you open your eyes.
+        All you have to do is start.
       </p>
 
       <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
         <a href="#pricing" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 bg-gradient-to-b from-white to-blue-50 border border-white text-blue-600 text-sm font-normal shadow-[0_14px_30px_rgba(15,23,42,0.18),inset_0_1px_0_white] hover:from-white hover:to-white hover:-translate-y-0.5 active:shadow-[inset_0_2px_4px_rgba(15,23,42,0.08)] transition-all duration-300">
-          Try SHIRO Free
+          Start Free Today
           <iconify-icon icon="solar:arrow-right-linear" style={{"strokeWidth":"1.5"}} className="text-lg"></iconify-icon>
         </a>
 
         <a href="#workflow" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 bg-white/14 border border-white/24 text-white text-sm font-normal shadow-[inset_0_1px_0_rgba(255,255,255,0.16)] hover:bg-white/20 hover:-translate-y-0.5 transition-all duration-300">
-          See Workflow
+          See How It Works
         </a>
       </div>
 

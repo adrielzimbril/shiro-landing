@@ -12,20 +12,20 @@ export const Problem = () => {
     
           <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-500 mb-4">
     
-            WHY IT MATTERS
+            THE REAL PROBLEM
     
           </p>
     
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-slate-950 leading-[1.05] max-w-5xl">
-            Your work does not
-            <span className="block text-slate-950">arrive neatly.</span>
+            Your brain is not
+            <span className="block text-slate-950">a filing system.</span>
           </h2>
     
           <p className="mt-5 text-base md:text-lg leading-8 text-slate-600 font-light max-w-2xl">
     
-            It arrives as notes, messages, meetings, documents, half-ideas, and forgotten follow-ups.
+            Ideas arrive as voice notes. Priorities hide in email threads. Deadlines live in calendar invites.
     
-            SHIRO turns that scattered input into priorities, summaries, reminders, and next actions you can actually use.
+            Shiro makes sense of it all — so you don’t have to hold everything in your head.
     
           </p>
     
@@ -172,21 +172,21 @@ export const Problem = () => {
     
               <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-300 mb-4">
     
-                THE TRANSFORMATION
+                HOW SHIRO CHANGES THINGS
     
               </p>
     
               <h2 className="md:text-4xl lg:text-5xl leading-tight text-3xl font-light text-white tracking-tight mb-6">
     
-                From mental clutter to a clear daily operating system.
+                From mental overload to a clean daily operating system.
     
               </h2>
     
               <p className="text-base leading-8 text-slate-300 font-light max-w-xl">
     
-                SHIRO reads the signals across your day, connects what matters, and turns scattered input into priorities,
+                Shiro reads every signal across your day, connects the dots,
     
-                summaries, follow-ups, and next actions.
+                and gives you back a structured plan with priorities, follow-ups, and clear next actions.
     
               </p>
     
@@ -212,7 +212,7 @@ export const Problem = () => {
     
                 <p className="text-xs text-white/50 uppercase tracking-widest mb-4 font-['JetBrains_Mono',monospace]">
     
-                  Built for focused work
+                  Built for overthinkers
     
                 </p>
     
@@ -226,19 +226,19 @@ export const Problem = () => {
     
                   <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">
     
-                    Executives
-    
-                  </span>
-    
-                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">
-    
                     Creators
     
                   </span>
     
                   <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">
     
-                    Consultants
+                    Freelancers
+    
+                  </span>
+    
+                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">
+    
+                    Executives
     
                   </span>
     

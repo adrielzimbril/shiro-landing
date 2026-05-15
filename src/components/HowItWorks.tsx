@@ -16,17 +16,17 @@ export const HowItWorks = () => {
 
     <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-slate-950 leading-[1.05] max-w-5xl mx-auto">
 
-      Four steps from scattered
+      Chaos in, clarity out —
 
-      <span className="block">to organized.</span>
+      <span className="block">four simple steps.</span>
 
     </h2>
 
     <p className="mt-6 max-w-3xl mx-auto text-base md:text-lg leading-8 text-slate-600 font-light">
 
-      Capture what happens, let SHIRO organize the context, then start with priorities,
+      You drop in whatever happened. Shiro reads it, sorts it, and gives you back a clean plan of action —
 
-      summaries, reminders, and next actions already prepared.
+      every single day, without the mental overhead.
 
     </p>
 

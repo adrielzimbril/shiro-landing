@@ -20,14 +20,10 @@ export const Footer = () => {
 
         <a href="#" className="flex items-center gap-3 group">
 
-          <span className="w-10 h-10 rounded-full bg-gradient-to-b from-white to-slate-100 border border-slate-200 shadow-[0_2px_8px_rgba(15,23,42,0.06),inset_0_1px_0_white] flex items-center justify-center">
-
-            <span className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.08em] text-blue-600">
-
-              AU
-
-            </span>
-
+          <span className="w-10 h-10 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700 shadow-[0_4px_12px_rgba(59,130,246,0.35),inset_0_1px_0_rgba(255,255,255,0.25)] flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="32" y="46" textAnchor="middle" fontFamily="'Inter', system-ui, sans-serif" fontSize="38" fontWeight="700" fill="white" letterSpacing="-2">S</text>
+            </svg>
           </span>
 
           <span className="flex flex-col justify-center leading-none">

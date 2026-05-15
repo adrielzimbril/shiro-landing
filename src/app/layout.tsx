@@ -14,21 +14,21 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shiro-landing.adrielzimbril.com"),
-  title: "Shiro — Premium Personal AI Assistant",
-  description: "Day 14/30 of the AI-Generated Landing Page Challenge. Shiro is a conceptual Personal AI Assistant that manages your daily schedule and eliminates procrastination.",
+  title: "Shiro — Your Personal AI Assistant",
+  description: "Shiro plans your days, tracks your priorities, and eliminates procrastination. Your AI-powered personal assistant that turns scattered thoughts into focused action — every single morning.",
   keywords: [
     "Shiro",
     "Personal AI Assistant",
-    "AI Assistant",
-    "Productivity",
-    "Next.js",
-    "Tailwind CSS",
-    "bento design",
-    "AI challenge"
+    "AI Productivity",
+    "Daily Planner AI",
+    "AI Schedule Manager",
+    "Procrastination Fix",
+    "Focus App",
+    "AI Task Manager"
   ],
   openGraph: {
-    title: "Shiro — Premium Personal AI Assistant",
-    description: "A conceptual Personal AI Assistant landing page for Day 14/30 of the AI-Generated Landing Page Challenge.",
+    title: "Shiro — Your Personal AI Assistant",
+    description: "Shiro plans your days, tracks your priorities, and eliminates procrastination. Turn your scattered inputs into a clean daily operating system.",
     images: ["/opengraph-image.png"],
     url: "https://shiro-landing.adrielzimbril.com",
     siteName: "Shiro",
@@ -37,12 +37,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shiro — Premium Personal AI Assistant",
-    description: "A conceptual Personal AI Assistant landing page for Day 14/30 of the AI-Generated Landing Page Challenge.",
+    title: "Shiro — Your Personal AI Assistant",
+    description: "Shiro plans your days, tracks your priorities, and eliminates procrastination.",
     images: ["/opengraph-image.png"],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 };
 
