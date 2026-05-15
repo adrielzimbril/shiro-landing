@@ -10,13 +10,18 @@ const ProblemCard = ({ icon: Icon, title, description, delay = 0 }: { icon: any;
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, delay }}
-    className="group relative rounded-3xl bg-white border border-slate-200 p-8 shadow-[0_2px_12px_rgba(15,23,42,0.02)] hover:shadow-[0_20px_40px_-20px_rgba(15,23,42,0.12)] transition-all duration-500"
+    className="group relative rounded-[2.5rem] bg-white border border-slate-200/60 p-8 md:p-10 shadow-[0_14px_34px_-26px_rgba(15,23,42,0.1),inset_0_1px_0_white] hover:shadow-[0_40px_80px_-40px_rgba(15,23,42,0.15)] hover:border-blue-100 hover:-translate-y-1 transition-all duration-500 overflow-hidden"
   >
-    <div className="w-12 h-12 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center mb-6 group-hover:bg-blue-50 group-hover:border-blue-100 transition-colors duration-500">
-      <Icon className="w-6 h-6 text-slate-400 group-hover:text-blue-500 transition-colors duration-500" />
+    {/* Decorative Background */}
+    <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-32 h-32 bg-blue-50/50 rounded-full blur-3xl group-hover:bg-blue-100/50 transition-colors duration-500" />
+    
+    <div className="relative z-10">
+      <div className="w-14 h-14 rounded-2xl bg-gradient-to-b from-slate-50 to-white border border-slate-100 flex items-center justify-center mb-8 shadow-sm group-hover:from-blue-500 group-hover:to-blue-600 group-hover:border-blue-400 group-hover:shadow-[0_10px_20px_rgba(59,130,246,0.3)] transition-all duration-500">
+        <Icon className="w-7 h-7 text-slate-400 group-hover:text-white transition-colors duration-500" strokeWidth={1.5} />
+      </div>
+      <h3 className="text-xl md:text-2xl font-normal text-slate-950 mb-4 tracking-tight">{title}</h3>
+      <p className="text-sm md:text-base text-slate-500 leading-relaxed font-light">{description}</p>
     </div>
-    <h3 className="text-xl font-normal text-slate-900 mb-3 tracking-tight">{title}</h3>
-    <p className="text-sm text-slate-500 leading-6 font-light">{description}</p>
   </motion.div>
 );
 
@@ -26,33 +31,38 @@ export const Problem = () => {
       <div className="flex flex-col z-10 w-full relative gap-y-16">
         {/* Section Intro */}
         <div className="max-w-3xl">
-          <motion.p 
+          <motion.div 
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="font-mono text-xs font-medium tracking-[-0.04em] text-blue-500 mb-4"
+            className="inline-flex items-center gap-2 mb-6"
           >
-            THE CHALLENGE
-          </motion.p>
+            <span className="w-8 h-px bg-blue-500" />
+            <p className="font-mono text-[10px] md:text-xs font-semibold tracking-wider text-blue-600 uppercase">
+              The Reality
+            </p>
+          </motion.div>
+          
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-slate-950 leading-[1.05] max-w-5xl"
+            className="text-4xl md:text-6xl lg:text-7xl font-normal tracking-tight text-slate-950 leading-[1.05] max-w-5xl"
           >
-            Your work does not arrive neatly.
-            <span className="block text-slate-400">It arrives as chaos.</span>
+            Your work does not <br />
+            <span className="text-slate-400">arrive neatly.</span>
           </motion.h2>
+          
           <motion.p 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-6 text-base md:text-lg leading-8 text-slate-600 font-light max-w-2xl"
+            className="mt-8 text-base md:text-xl leading-relaxed text-slate-600 font-light max-w-2xl"
           >
-            Procrastination isn&apos;t laziness—it&apos;s cognitive overload. Shiro eliminates the friction 
-            of deciding what to do next by organizing the noise into a clear, actionable path.
+            It arrives as notes, messages, meetings, and half-ideas. Shiro turns that scattered noise 
+            into priorities, summaries, and actions you can actually use.
           </motion.p>
         </div>
 
@@ -61,13 +71,13 @@ export const Problem = () => {
           <ProblemCard 
             icon={Brain}
             title="Mental Clutter"
-            description="Half-baked ideas and random thoughts scattered across apps, tabs, and physical notes."
+            description="Half-baked ideas and random thoughts scattered across multiple apps, tabs, and notebooks."
             delay={0.1}
           />
           <ProblemCard 
             icon={Clock}
             title="Time Fragmentation"
-            description="Constant context switching that leaves you with shallow work and zero deep focus."
+            description="Constant context switching that leaves you with shallow work and zero deep focus time."
             delay={0.2}
           />
           <ProblemCard 
@@ -79,7 +89,7 @@ export const Problem = () => {
           <ProblemCard 
             icon={ZapOff}
             title="Decision Fatigue"
-            description="Spending more time planning what to work on than actually doing the work."
+            description="Spending more time planning what to work on than actually getting the work done."
             delay={0.4}
           />
         </div>
