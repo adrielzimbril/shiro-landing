@@ -30,27 +30,27 @@
 }
 
 :root {
-  --background: #fafafa;
-  --foreground: #17191f;
+  --background: #f3f3f0; /* Warm Cream */
+  --foreground: #17191f; /* Dark Graphite */
   
-  --primary: #8b5cf6; /* Violet 500 */
+  --primary: #7c3aed; /* Violet 600 */
   --primary-foreground: #ffffff;
   
-  --secondary: #f4f4f5;
+  --secondary: #e5e5e2; /* Muted Cream */
   --secondary-foreground: #17191f;
   
-  --muted: #f4f4f5;
+  --muted: #e5e5e2;
   --muted-foreground: #71717a;
   
   --accent: #f5f3ff; /* Violet 50 */
-  --accent-foreground: #8b5cf6;
+  --accent-foreground: #7c3aed;
   
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
   
-  --border: #e4e4e7;
-  --input: #e4e4e7;
-  --ring: #8b5cf6;
+  --border: #e2e2de;
+  --input: #e2e2de;
+  --ring: #7c3aed;
   
   --radius: 0.75rem;
 }
@@ -64,7 +64,7 @@
     @apply bg-background text-foreground font-sans;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-light tracking-tight;
+    @apply font-serif font-light tracking-tight text-foreground;
   }
 }
 
@@ -77,21 +77,25 @@
   @apply bg-white/70 backdrop-blur-md border border-white/20;
 }
 
+.glass-dark {
+  @apply bg-[#17191f]/80 backdrop-blur-md border border-white/10;
+}
+
 .reveal-on-scroll {
   opacity: 0;
   transform: translate3d(0, 24px, 0);
   filter: blur(12px);
-  transition: opacity 760ms cubic-bezier(0.22, 1, 0.36, 1), transform 760ms cubic-bezier(0.22, 1, 0.36, 1), filter 760ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1), transform 800ms cubic-bezier(0.16, 1, 0.3, 1), filter 800ms cubic-bezier(0.16, 1, 0.3, 1);
   transition-delay: var(--reveal-delay, 0ms);
   will-change: opacity, transform, filter;
 }
 
 .reveal-on-scroll.reveal-from-left {
-  transform: translate3d(-28px, 18px, 0);
+  transform: translate3d(-32px, 20px, 0);
 }
 
 .reveal-on-scroll.reveal-from-right {
-  transform: translate3d(28px, 18px, 0);
+  transform: translate3d(32px, 20px, 0);
 }
 
 .reveal-on-scroll.is-visible {
@@ -113,11 +117,11 @@
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: aura-marquee 34s linear infinite;
+  animation: aura-marquee 40s linear infinite;
 }
 
 .marquee-track-slow {
-  animation-duration: 48s;
+  animation-duration: 60s;
 }
 
 .marquee-track:hover {
