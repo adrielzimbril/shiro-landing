@@ -56,7 +56,12 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <head>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" async></script>
+      </head>
+      <body className="min-h-full flex flex-col font-sans bg-[#f8fafc] text-slate-950 selection:bg-blue-100 selection:text-blue-700">
+        {children}
+      </body>
     </html>
   );
 }
