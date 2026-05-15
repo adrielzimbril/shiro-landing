@@ -1,49 +1,47 @@
-# ⚡ Ashura — Branding & AI Agency Landing Page
+# 🐼 Shiro — Personal AI Assistant Landing Page
 
-> **Day 13/30 of the "Building 1 AI-Generated Landing Page Every Day" Challenge**
+> **Day 14/30 of the "Building 1 AI-Generated Landing Page Every Day" Challenge**
 
 ![preview](public/opengraph-image.png)
 
 ## 🚀 About
 
-Conceptual landing page for **Ashura**, a **branding and communication agency that uses AI as a strategic vector**, developed with **Next.js 16**, **TypeScript**, and **Tailwind CSS 4**. This project is the thirteenth realization of an ambitious challenge: creating **1 complete and functional mockup per day using AI**.
+Conceptual landing page for **Shiro**, a **premium Personal AI Assistant** that manages your daily schedule and eliminates procrastination. Developed with **Next.js 16**, **TypeScript**, and **Tailwind CSS 4**. This project is the fourteenth realization of an ambitious challenge: creating **1 complete and functional mockup per day using AI**.
 
-Ashura is presented through a high-end, image-led agency experience covering brand strategy, AI creative direction, campaign systems, and digital identity. The goal is to instantly convey **strategic clarity**, **creative authority**, **AI-augmented production**, and **brand impact** through a sleek, responsive, dark aesthetic.
+Shiro is designed to turn scattered thoughts, notes, and tasks into a cohesive, actionable daily plan. The goal is to provide **mental clarity**, **seamless organization**, and **uninterrupted focus** through a high-end, bento-inspired digital experience.
 
-Live URL: [https://ashura-landing.adrielzimbril.com](https://ashura-landing.adrielzimbril.com)
+Live URL: [https://shiro-landing.adrielzimbril.com](https://shiro-landing.adrielzimbril.com)
 
 ## 🎨 Design & Aesthetic Decisions
 
-For this project, the theme focuses on **brand strategy, AI-assisted creative direction, campaign systems, and communication agency positioning**.
+For this project, the theme focuses on **productivity, cognitive ease, and procrastination-free workflows**.
 
-- **Modern Aesthetic:** The interface uses a dark, minimal agency language with card-based sections, grayscale imagery that reveals color on hover, and purposeful micro-interactions.
-- **Performance First:** Every component is optimized for speed and efficiency, leveraging Next.js 16's latest features.
-- **Responsive Design:** Fully responsive layout that adapts seamlessly across all device sizes.
-- **Interactive Elements:** Smooth scrolling, floating navbar, inner-image scale hover (layout-stable), grayscale-to-color transitions, and bento-style section cards create a polished user experience.
-- **Premium Identity:** Consistent typography with Hanken Grotesk, dark card surfaces, and a cohesive visual system keep the agency identity sharp throughout the entire experience.
+- **Modern Aesthetic:** A refined indigo and slate palette with high-end glassmorphism, subtle gradients, and a "clean workbench" feel.
+- **Performance First:** Leveraging Next.js 16's latest features for instant loading and smooth transitions.
+- **Bento Grid Layout:** Organizing complex information into clear, distinct cards that simulate a productivity dashboard.
+- **Purposeful Interactions:** Entrance reveals, floating UI elements, and interactive priority cards that make the experience feel alive yet calm.
+- **Premium Typography:** Using **Inter** for clarity and **JetBrains Mono** for that precise, assistant-like data aesthetic.
 
 ## 🧩 Key Sections
 
-- **🌟 Hero Section:** Agency positioning with headline, value proposition, CTA buttons, and a trusted-brands ticker.
-- **⚡ Brand Territories:** Masonry gallery of visual systems and campaign work with grayscale-to-color hover reveal.
-- **🎯 Agency Profile:** Split-layout card with the agency's strategic approach, skill tags, and phased methodology.
-- **📊 Strategic Process:** Three-step method card — Diagnose, Design with AI, Deploy — with process step cards.
-- **🏢 Services:** Four core service offerings with icon cards, tags, and a featured visual.
-- **🌐 Modern Footer:** Comprehensive footer with links, contact routes, and agency information.
+- **🌟 Hero Section:** High-impact introduction with floating UI bubbles representing captured thoughts and drafted actions.
+- **🧠 Problem Context:** A deep dive into the "scattered work" problem and how Shiro provides the solution.
+- **⚡ Feature Bento:** A masonry-style grid showcasing core capabilities like Briefings, Focus Windows, and Smart Replies.
+- **🔄 Workflow Sync:** Visualizing how Shiro integrates across devices to keep you organized everywhere.
+- **🔒 Privacy First:** Highlighting the secure, private-by-design architecture of the assistant.
+- **🌐 Modern Footer:** Comprehensive navigation and social links.
 
 ## 🛠️ Tech Stack
 
-This mockup was built with cutting-edge technologies from the React ecosystem:
+This mockup was built with cutting-edge technologies:
 
 - **[Next.js 16](https://nextjs.org/)** with App Router and Turbopack
 - **[React 19](https://react.dev/)**
-- **TypeScript** for scalable component architecture and safer iteration.
-- **[Tailwind CSS v4](https://tailwindcss.com/)** for design tokens, utilities, and modern CSS support.
-- **[Motion/React](https://motion.dev/)** for scroll-triggered animations and entrance transitions.
-- **Three.js & Postprocessing** for the ambient background visual layer.
-- **[Lenis](https://lenis.darkroom.engineering/)** for smoother scroll behavior.
-- **[Lucide React](https://lucide.dev/)** for clean, consistent iconography.
-- **Next Font** with **Hanken Grotesk** and **Geist Mono** for optimized typography.
+- **TypeScript** for scalable component architecture.
+- **[Tailwind CSS v4](https://tailwindcss.com/)** for modern design tokens and utilities.
+- **[Motion/React](https://motion.dev/)** for sophisticated entrance and hover animations.
+- **[Lenis](https://lenis.darkroom.engineering/)** for smooth scroll behavior.
+- **[Lucide React](https://lucide.dev/)** for clean iconography.
 
 ## 🚀 Quick Start
 
