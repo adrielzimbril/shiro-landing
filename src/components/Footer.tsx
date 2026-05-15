@@ -6,7 +6,7 @@ export const Footer = () => {
 
   {/* Subtle footer glow */}
 
-  <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
+  <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-200 to-transparent"></div>
 
   <div className="max-w-7xl mx-auto px-6 py-12">
 
@@ -20,7 +20,7 @@ export const Footer = () => {
 
         <a href="#" className="flex items-center gap-3 group">
 
-          <span className="w-10 h-10 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700 shadow-[0_4px_12px_rgba(59,130,246,0.35),inset_0_1px_0_rgba(255,255,255,0.25)] flex items-center justify-center">
+          <span className="w-10 h-10 rounded-xl bg-gradient-to-b from-violet-500 to-indigo-600 shadow-[0_4px_12px_rgba(139,92,246,0.35),inset_0_1px_0_rgba(255,255,255,0.25)] flex items-center justify-center">
             <svg width="18" height="18" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <text x="32" y="46" textAnchor="middle" fontFamily="'Inter', system-ui, sans-serif" fontSize="38" fontWeight="700" fill="white" letterSpacing="-2">S</text>
             </svg>
@@ -28,7 +28,7 @@ export const Footer = () => {
 
           <span className="flex flex-col justify-center leading-none">
 
-            <span className="font-['JetBrains_Mono',monospace] text-sm font-semibold tracking-[-0.08em] text-slate-950 group-hover:text-blue-600 transition-colors">
+            <span className="font-['JetBrains_Mono',monospace] text-sm font-semibold tracking-[-0.08em] text-slate-950 group-hover:text-violet-600 transition-colors">
 
               SHIRO
 
@@ -50,9 +50,9 @@ export const Footer = () => {
 
         </p>
 
-        <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-100 px-3 py-1.5 text-xs text-blue-600 shadow-[inset_0_1px_0_white]">
+        <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-violet-50 border border-violet-100 px-3 py-1.5 text-xs text-violet-600 shadow-[inset_0_1px_0_white]">
 
-          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+          <span className="w-1.5 h-1.5 rounded-full bg-violet-500"></span>
 
           Built for busy minds
 
@@ -76,25 +76,25 @@ export const Footer = () => {
 
           <div className="flex flex-col gap-3 text-sm text-slate-500 font-light">
 
-            <a href="#features" className="hover:text-blue-600 transition-colors">
+            <a href="#features" className="hover:text-violet-600 transition-colors">
 
               Features
 
             </a>
 
-            <a href="#workflow" className="hover:text-blue-600 transition-colors">
+            <a href="#workflow" className="hover:text-violet-600 transition-colors">
 
               Workflow
 
             </a>
 
-            <a href="#built-for" className="hover:text-blue-600 transition-colors">
+            <a href="#built-for" className="hover:text-violet-600 transition-colors">
 
               Built For
 
             </a>
 
-            <a href="#pricing" className="hover:text-blue-600 transition-colors">
+            <a href="#pricing" className="hover:text-violet-600 transition-colors">
 
               Pricing
 
@@ -116,25 +116,25 @@ export const Footer = () => {
 
           <div className="flex flex-col gap-3 text-sm text-slate-500 font-light">
 
-            <a href="#workflow" className="hover:text-blue-600 transition-colors">
+            <a href="#workflow" className="hover:text-violet-600 transition-colors">
 
               Capture ideas
 
             </a>
 
-            <a href="#features" className="hover:text-blue-600 transition-colors">
+            <a href="#features" className="hover:text-violet-600 transition-colors">
 
               Summarize context
 
             </a>
 
-            <a href="#features" className="hover:text-blue-600 transition-colors">
+            <a href="#features" className="hover:text-violet-600 transition-colors">
 
               Recover follow-ups
 
             </a>
 
-            <a href="#features" className="hover:text-blue-600 transition-colors">
+            <a href="#features" className="hover:text-violet-600 transition-colors">
 
               Daily brief
 
@@ -156,25 +156,25 @@ export const Footer = () => {
 
           <div className="flex flex-col gap-3 text-sm text-slate-500 font-light">
 
-            <a href="#privacy" className="hover:text-blue-600 transition-colors">
+            <a href="#privacy" className="hover:text-violet-600 transition-colors">
 
               Privacy controls
 
             </a>
 
-            <a href="#privacy" className="hover:text-blue-600 transition-colors">
+            <a href="#privacy" className="hover:text-violet-600 transition-colors">
 
               Controlled memory
 
             </a>
 
-            <a href="#privacy" className="hover:text-blue-600 transition-colors">
+            <a href="#privacy" className="hover:text-violet-600 transition-colors">
 
               Reset anytime
 
             </a>
 
-            <a href="#faq" className="hover:text-blue-600 transition-colors">
+            <a href="#faq" className="hover:text-violet-600 transition-colors">
 
               FAQ
 
@@ -200,7 +200,7 @@ export const Footer = () => {
 
       <div className="flex items-center gap-4 text-xs text-slate-400 font-light">
 
-        <a href="#" className="hover:text-blue-600 transition-colors">
+        <a href="#" className="hover:text-violet-600 transition-colors">
 
           Terms
 
@@ -208,7 +208,7 @@ export const Footer = () => {
 
         <span className="w-1 h-1 rounded-full bg-slate-300"></span>
 
-        <a href="#" className="hover:text-blue-600 transition-colors">
+        <a href="#" className="hover:text-violet-600 transition-colors">
 
           Privacy
 
@@ -216,7 +216,7 @@ export const Footer = () => {
 
         <span className="w-1 h-1 rounded-full bg-slate-300"></span>
 
-        <a href="#" className="hover:text-blue-600 transition-colors">
+        <a href="#" className="hover:text-violet-600 transition-colors">
 
           Contact
 

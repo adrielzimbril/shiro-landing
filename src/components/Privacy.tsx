@@ -8,7 +8,7 @@ export const Privacy = () => {
 
   <div className="text-center max-w-5xl mx-auto mb-14">
 
-    <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-500 mb-4">
+    <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-violet-600 mb-4">
 
       PRIVACY &amp; CONTROL
 
@@ -40,10 +40,10 @@ export const Privacy = () => {
 
     {/* Soft Hero-style Glows */}
 
-    <div className="absolute top-[-35%] left-[-10%] w-[34rem] h-[34rem] rounded-full bg-blue-200/35 blur-[6rem] pointer-events-none">
+    <div className="absolute top-[-35%] left-[-10%] w-[34rem] h-[34rem] rounded-full bg-violet-200/35 blur-[6rem] pointer-events-none">
     </div>
 
-    <div className="absolute bottom-[-40%] right-[-10%] w-[32rem] h-[32rem] rounded-full bg-sky-200/24 blur-[6rem] pointer-events-none">
+    <div className="absolute bottom-[-40%] right-[-10%] w-[32rem] h-[32rem] rounded-full bg-indigo-100/24 blur-[6rem] pointer-events-none">
     </div>
 
     {/* Subtle Dot Texture */}
@@ -57,9 +57,9 @@ export const Privacy = () => {
 
       <div className="flex flex-col justify-center">
 
-        <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-100 px-3 py-1.5 text-xs text-blue-600 font-light w-fit mb-7 shadow-[inset_0_1px_0_white]">
+        <div className="inline-flex items-center gap-2 rounded-full bg-violet-50 border border-violet-100 px-3 py-1.5 text-xs text-violet-600 font-light w-fit mb-7 shadow-[inset_0_1px_0_white]">
 
-          <iconify-icon icon="solar:shield-check-linear" style={{"strokeWidth":"1.5"}} className="text-base text-blue-500"></iconify-icon>
+          <iconify-icon icon="solar:shield-check-linear" style={{"strokeWidth":"1.5"}} className="text-base text-violet-500"></iconify-icon>
 
           Private workspace memory
 
@@ -87,7 +87,7 @@ export const Privacy = () => {
 
           <span className="inline-flex items-center gap-2 rounded-full bg-white/72 border border-white px-4 py-2 text-xs text-slate-600 font-light shadow-[0_8px_20px_-16px_rgba(15,23,42,0.24),inset_0_1px_0_white]">
 
-            <iconify-icon icon="solar:database-linear" style={{"strokeWidth":"1.5"}} className="text-base text-blue-500"></iconify-icon>
+            <iconify-icon icon="solar:database-linear" style={{"strokeWidth":"1.5"}} className="text-base text-violet-500"></iconify-icon>
 
             Controlled memory
 
@@ -95,7 +95,7 @@ export const Privacy = () => {
 
           <span className="inline-flex items-center gap-2 rounded-full bg-white/72 border border-white px-4 py-2 text-xs text-slate-600 font-light shadow-[0_8px_20px_-16px_rgba(15,23,42,0.24),inset_0_1px_0_white]">
 
-            <iconify-icon icon="solar:tuning-2-linear" style={{"strokeWidth":"1.5"}} className="text-base text-blue-500"></iconify-icon>
+            <iconify-icon icon="solar:tuning-2-linear" style={{"strokeWidth":"1.5"}} className="text-base text-violet-500"></iconify-icon>
 
             Clear boundaries
 
@@ -103,7 +103,7 @@ export const Privacy = () => {
 
           <span className="inline-flex items-center gap-2 rounded-full bg-white/72 border border-white px-4 py-2 text-xs text-slate-600 font-light shadow-[0_8px_20px_-16px_rgba(15,23,42,0.24),inset_0_1px_0_white]">
 
-            <iconify-icon icon="solar:restart-circle-linear" style={{"strokeWidth":"1.5"}} className="text-base text-blue-500"></iconify-icon>
+            <iconify-icon icon="solar:restart-circle-linear" style={{"strokeWidth":"1.5"}} className="text-base text-violet-500"></iconify-icon>
 
             Reset anytime
 
@@ -123,10 +123,10 @@ export const Privacy = () => {
 
           {/* Inner Light Glow */}
 
-          <div className="absolute top-[-35%] right-[-20%] z-0 w-[22rem] h-[22rem] rounded-full bg-blue-200/45 blur-[4.5rem] pointer-events-none">
+          <div className="absolute top-[-35%] right-[-20%] z-0 w-[22rem] h-[22rem] rounded-full bg-violet-100/45 blur-[4.5rem] pointer-events-none">
           </div>
 
-          <div className="absolute bottom-[-40%] left-[-20%] z-0 w-[20rem] h-[20rem] rounded-full bg-sky-200/28 blur-[4rem] pointer-events-none">
+          <div className="absolute bottom-[-40%] left-[-20%] z-0 w-[20rem] h-[20rem] rounded-full bg-indigo-50/28 blur-[4rem] pointer-events-none">
           </div>
 
           <div className="relative z-10">
@@ -217,7 +217,7 @@ export const Privacy = () => {
 
                   </div>
 
-                  <span className="relative inline-flex h-7 w-12 items-center rounded-full bg-gradient-to-b from-blue-500 to-blue-600 border border-blue-700 shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">
+                  <span className="relative inline-flex h-7 w-12 items-center rounded-full bg-gradient-to-b from-violet-500 to-indigo-600 border border-violet-700 shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]">
 
                     <span className="inline-block h-5 w-5 translate-x-6 rounded-full bg-white shadow-sm"></span>
 
@@ -331,7 +331,7 @@ export const Privacy = () => {
 
                 </div>
 
-                <button className="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs text-blue-600 bg-blue-50 border border-blue-100 shadow-[inset_0_1px_0_white]">
+                <button className="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs text-violet-600 bg-violet-50 border border-violet-100 shadow-[inset_0_1px_0_white]">
 
                   Review memory
 

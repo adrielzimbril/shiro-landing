@@ -16,7 +16,7 @@ Live URL: [https://shiro-landing.adrielzimbril.com](https://shiro-landing.adriel
 
 For this project, the theme focuses on **productivity, cognitive ease, and procrastination-free workflows**.
 
-- **Modern Aesthetic:** A refined indigo and slate palette with high-end glassmorphism, subtle gradients, and a "clean workbench" feel.
+- **Modern Aesthetic:** A refined violet and slate palette with high-end glassmorphism, subtle gradients, and a "clean workbench" feel.
 - **Performance First:** Leveraging Next.js 16's latest features for instant loading and smooth transitions.
 - **Bento Grid Layout:** Organizing complex information into clear, distinct cards that simulate a productivity dashboard.
 - **Purposeful Interactions:** Entrance reveals, floating UI elements, and interactive priority cards that make the experience feel alive yet calm.

@@ -14,8 +14,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shiro-landing.adrielzimbril.com"),
-  title: "Shiro — Your Personal AI Assistant",
-  description: "Shiro plans your days, tracks your priorities, and eliminates procrastination. Your AI-powered personal assistant that turns scattered thoughts into focused action — every single morning.",
+  title: "Shiro — Architect Your Focus, End Procrastination",
+  description: "Shiro is your personal AI assistant designed to bridge the gap between intent and action. It architects your day, silences noise, and keeps you in flow.",
   keywords: [
     "Shiro",
     "Personal AI Assistant",
@@ -24,7 +24,14 @@ export const metadata: Metadata = {
     "AI Schedule Manager",
     "Procrastination Fix",
     "Focus App",
-    "AI Task Manager"
+    "AI Task Manager",
+    "ai-challenge",
+    "ai-landing-page",
+    "bento-design",
+    "generative-ai",
+    "nextjs",
+    "motion/react",
+    "tailwindcss"
   ],
   openGraph: {
     title: "Shiro — Your Personal AI Assistant",
@@ -43,10 +50,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" },
     ],
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
@@ -63,7 +70,7 @@ export default function RootLayout({
       <head>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" async></script>
       </head>
-      <body className="min-h-full flex flex-col font-sans bg-[#f8fafc] text-slate-950 selection:bg-blue-100 selection:text-blue-700">
+      <body className="min-h-full flex flex-col font-sans bg-white text-slate-950 selection:bg-violet-100 selection:text-violet-900">
         {children}
       </body>
     </html>

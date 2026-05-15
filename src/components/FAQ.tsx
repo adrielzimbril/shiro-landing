@@ -8,7 +8,7 @@ export const FAQ = () => {
 
   <div className="text-center max-w-3xl mx-auto mb-14">
 
-    <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-500 mb-4">
+    <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-violet-500 mb-4">
 
       FAQ
 
@@ -38,10 +38,10 @@ export const FAQ = () => {
 
     {/* Soft Background Glows */}
 
-    <div className="absolute top-[-35%] left-[-10%] w-[34rem] h-[34rem] rounded-full bg-blue-200/35 blur-[6rem] pointer-events-none">
+    <div className="absolute top-[-35%] left-[-10%] w-[34rem] h-[34rem] rounded-full bg-violet-200/35 blur-[6rem] pointer-events-none">
     </div>
 
-    <div className="absolute bottom-[-40%] right-[-10%] w-[32rem] h-[32rem] rounded-full bg-sky-200/22 blur-[6rem] pointer-events-none">
+    <div className="absolute bottom-[-40%] right-[-10%] w-[32rem] h-[32rem] rounded-full bg-indigo-200/22 blur-[6rem] pointer-events-none">
     </div>
 
     {/* Dot Texture */}
@@ -53,62 +53,60 @@ export const FAQ = () => {
 
       {/* Left Support Card */}
 
-      <div className="rounded-[2.25rem] bg-gradient-to-b from-[#1d2a3d] to-[#131c2b] text-white border border-white/10 p-6 md:p-8 shadow-[0_24px_60px_-35px_rgba(15,23,42,0.62),inset_0_1px_0_rgba(255,255,255,0.13)] overflow-hidden relative">
+      <div className="rounded-[2.25rem] bg-white/40 backdrop-blur-2xl border border-white p-6 md:p-8 shadow-[0_24px_60px_-35px_rgba(139,92,246,0.15),inset_0_1px_0_white] overflow-hidden relative group">
 
         {/* Inner Texture */}
 
-        <div className="absolute inset-0 opacity-[0.10]" style={{"backgroundImage":"linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px)","backgroundSize":"34px 34px"}}>
+        <div className="absolute inset-0 opacity-[0.05]" style={{"backgroundImage":"radial-gradient(circle at 1px 1px, rgba(139,92,246,0.2) 1px, transparent 0)","backgroundSize":"24px 24px"}}>
         </div>
 
         {/* Soft Glow */}
 
-        <div className="absolute top-[-35%] right-[-25%] w-[18rem] h-[18rem] rounded-full bg-blue-400/18 blur-[4.5rem] pointer-events-none">
+        <div className="absolute top-[-35%] right-[-25%] w-[18rem] h-[18rem] rounded-full bg-violet-400/10 blur-[4.5rem] pointer-events-none">
         </div>
 
-        <div className="absolute bottom-[-35%] left-[-20%] w-[16rem] h-[16rem] rounded-full bg-sky-200/10 blur-[4rem] pointer-events-none">
+        <div className="absolute bottom-[-35%] left-[-20%] w-[16rem] h-[16rem] rounded-full bg-indigo-200/10 blur-[4rem] pointer-events-none">
         </div>
 
         <div className="relative">
 
-          <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center shadow-[inset_0_1px_0_rgba(255,255,255,0.14)] mb-8">
+          <div className="w-12 h-12 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center shadow-[inset_0_1px_0_white] mb-8">
 
-            <iconify-icon icon="solar:question-circle-linear" style={{"strokeWidth":"1.5"}} className="text-2xl text-blue-200"></iconify-icon>
+            <iconify-icon icon="solar:question-circle-linear" style={{"strokeWidth":"1.5"}} className="text-2xl text-violet-500"></iconify-icon>
 
           </div>
 
-          <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-200 mb-4">
+          <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-violet-500 mb-4">
 
             STILL DECIDING?
 
           </p>
 
-          <h3 className="text-3xl md:text-4xl font-normal tracking-tight text-white leading-[1.08]">
+          <h3 className="text-3xl md:text-4xl font-normal tracking-tight text-slate-950 leading-[1.08]">
 
-            Start simple.
-
-            <span className="block">Stay in control.</span>
+            Stop planning.
+            <span className="block">Start executing.</span>
 
           </h3>
 
-          <p className="mt-5 text-sm md:text-base leading-7 text-slate-300 font-light">
+          <p className="mt-5 text-sm md:text-base leading-7 text-slate-500 font-light">
 
-            SHIRO is designed to reduce mental clutter without taking over your workflow.
-
-            You decide what gets saved, what stays temporary, and what becomes part of your daily brief.
+            SHIRO is designed to eliminate the mental friction that leads to procrastination.
+            It architectures your day so you always know exactly what to do next.
 
           </p>
 
           <div className="mt-8 grid gap-3">
 
-            <div className="rounded-2xl bg-white/[0.07] border border-white/10 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <div className="rounded-2xl bg-white border border-violet-100 px-4 py-3 shadow-[0_4px_12px_rgba(139,92,246,0.05),inset_0_1px_0_white]">
 
               <div className="flex items-center gap-3">
 
-                <iconify-icon icon="solar:shield-check-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-200"></iconify-icon>
+                <iconify-icon icon="solar:shield-check-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
-                <span className="text-sm text-white font-normal">
+                <span className="text-sm text-slate-600 font-normal">
 
-                  Privacy-first memory controls
+                  Proactive Focus Blocking
 
                 </span>
 
@@ -116,15 +114,15 @@ export const FAQ = () => {
 
             </div>
 
-            <div className="rounded-2xl bg-white/[0.07] border border-white/10 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <div className="rounded-2xl bg-white border border-violet-100 px-4 py-3 shadow-[0_4px_12px_rgba(139,92,246,0.05),inset_0_1px_0_white]">
 
               <div className="flex items-center gap-3">
 
-                <iconify-icon icon="solar:document-text-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-200"></iconify-icon>
+                <iconify-icon icon="solar:document-text-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
-                <span className="text-sm text-white font-normal">
+                <span className="text-sm text-slate-600 font-normal">
 
-                  Summaries, priorities, and follow-ups
+                  Cognitive Load Balancing
 
                 </span>
 
@@ -132,15 +130,15 @@ export const FAQ = () => {
 
             </div>
 
-            <div className="rounded-2xl bg-white/[0.07] border border-white/10 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <div className="rounded-2xl bg-white border border-violet-100 px-4 py-3 shadow-[0_4px_12px_rgba(139,92,246,0.05),inset_0_1px_0_white]">
 
               <div className="flex items-center gap-3">
 
-                <iconify-icon icon="solar:restart-circle-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-200"></iconify-icon>
+                <iconify-icon icon="solar:restart-circle-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
-                <span className="text-sm text-white font-normal">
+                <span className="text-sm text-slate-600 font-normal">
 
-                  Review or reset context anytime
+                  Instant Friction Removal
 
                 </span>
 
@@ -152,7 +150,7 @@ export const FAQ = () => {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
 
-            <a href="#pricing" className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 bg-white text-slate-950 text-sm font-normal border border-white shadow-[inset_0_1px_0_white] hover:bg-slate-100 hover:-translate-y-0.5 transition-all">
+            <a href="#pricing" className="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 bg-violet-600 text-white text-sm font-normal border border-violet-500 shadow-lg shadow-violet-200 hover:bg-violet-500 hover:-translate-y-0.5 transition-all">
 
               Try SHIRO Free
 
@@ -160,7 +158,7 @@ export const FAQ = () => {
 
             </a>
 
-            <a href="#privacy" className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-white/[0.07] text-white text-sm font-normal border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] hover:bg-white/[0.1] transition-all">
+            <a href="#privacy" className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-white text-slate-600 text-sm font-normal border border-slate-200 shadow-sm hover:bg-slate-50 transition-all">
 
               Review Privacy
 
@@ -184,15 +182,15 @@ export const FAQ = () => {
 
             <div className="flex items-center gap-4">
 
-              <div className="w-10 h-10 shrink-0 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
+              <div className="w-10 h-10 shrink-0 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
 
-                <iconify-icon icon="solar:chat-round-like-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:chat-round-like-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
               </div>
 
               <h3 className="text-base md:text-lg font-normal tracking-tight text-slate-950">
 
-                How is SHIRO different from a regular chatbot?
+                How does SHIRO help with procrastination?
 
               </h3>
 
@@ -210,11 +208,9 @@ export const FAQ = () => {
 
             <p className="text-sm md:text-base leading-7 text-slate-600 font-light">
 
-              A regular chatbot waits for prompts. SHIRO works more like a personal operating layer:
-
-              it captures context, summarizes what matters, surfaces priorities, finds follow-ups,
-
-              and helps you start from organized action instead of a blank chat box.
+              A regular chatbot waits for prompts. SHIRO works more like a proactive operating layer:
+              it architectures your day, balances your cognitive load, and surfaces exactly what
+              matters so you can start from organized action instead of a blank chat box.
 
             </p>
 
@@ -230,9 +226,9 @@ export const FAQ = () => {
 
             <div className="flex items-center gap-4">
 
-              <div className="w-10 h-10 shrink-0 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
+              <div className="w-10 h-10 shrink-0 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
 
-                <iconify-icon icon="solar:microphone-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:microphone-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
               </div>
 
@@ -276,9 +272,9 @@ export const FAQ = () => {
 
             <div className="flex items-center gap-4">
 
-              <div className="w-10 h-10 shrink-0 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
+              <div className="w-10 h-10 shrink-0 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
 
-                <iconify-icon icon="solar:devices-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:devices-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
               </div>
 
@@ -322,9 +318,9 @@ export const FAQ = () => {
 
             <div className="flex items-center gap-4">
 
-              <div className="w-10 h-10 shrink-0 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
+              <div className="w-10 h-10 shrink-0 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
 
-                <iconify-icon icon="solar:sun-2-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:sun-2-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
               </div>
 
@@ -368,9 +364,9 @@ export const FAQ = () => {
 
             <div className="flex items-center gap-4">
 
-              <div className="w-10 h-10 shrink-0 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
+              <div className="w-10 h-10 shrink-0 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
 
-                <iconify-icon icon="solar:shield-check-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:shield-check-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
               </div>
 
@@ -414,9 +410,9 @@ export const FAQ = () => {
 
             <div className="flex items-center gap-4">
 
-              <div className="w-10 h-10 shrink-0 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
+              <div className="w-10 h-10 shrink-0 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center shadow-[inset_0_1px_0_white]">
 
-                <iconify-icon icon="solar:user-check-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-blue-500"></iconify-icon>
+                <iconify-icon icon="solar:user-check-linear" style={{"strokeWidth":"1.5"}} className="text-xl text-violet-500"></iconify-icon>
 
               </div>
 

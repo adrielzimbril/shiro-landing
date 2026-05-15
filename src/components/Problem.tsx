@@ -2,713 +2,210 @@ import React from 'react';
 
 export const Problem = () => {
   return (
-        <section className="max-w-7xl mx-auto px-6 py-20">
-    
-      <div className="flex flex-col z-10 w-full relative gap-y-16">
+    <section className="max-w-7xl mx-auto px-6 py-24 md:py-32">
+      <div className="flex flex-col z-10 w-full relative gap-y-20">
     
         {/* Section Intro */}
-    
-        <div className="max-w-3xl">
-    
-          <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-500 mb-4">
-    
-            THE REAL PROBLEM
-    
-          </p>
-    
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-slate-950 leading-[1.05] max-w-5xl">
-            Your brain is not
-            <span className="block text-slate-950">a filing system.</span>
+        <div className="max-w-4xl">
+          <div className="inline-flex items-center gap-2 rounded-full bg-violet-50 border border-violet-100 px-3 py-1 mb-8 shadow-[inset_0_1px_0_white]">
+            <span className="w-1.5 h-1.5 rounded-full bg-violet-500 shadow-[0_0_8px_rgba(139,92,246,0.4)]" />
+            <p className="font-['JetBrains_Mono',monospace] text-[10px] font-medium tracking-tight text-violet-500 uppercase">
+              The Cognitive Tax
+            </p>
+          </div>
+          <h2 className="text-4xl md:text-6xl lg:text-[5.5rem] font-normal tracking-[-0.04em] text-slate-950 leading-[0.95] max-w-5xl">
+            Information isn't the problem.
+            <span className="block text-slate-400 mt-2">The architecture is.</span>
           </h2>
-    
-          <p className="mt-5 text-base md:text-lg leading-8 text-slate-600 font-light max-w-2xl">
-    
-            Ideas arrive as voice notes. Priorities hide in email threads. Deadlines live in calendar invites.
-    
-            Shiro makes sense of it all — so you don’t have to hold everything in your head.
-    
+          <p className="mt-10 text-lg md:text-xl leading-relaxed text-slate-500 font-normal max-w-2xl">
+            Scattered notes, buried emails, and endless pings aren't just noise—they're a tax on your focus. 
+            Procrastination happens when the distance between <span className="text-violet-600 font-medium">intent</span> and <span className="text-violet-600 font-medium">action</span> is too wide.
           </p>
-    
         </div>
     
-        {/* Problem Cards */}
+        {/* Problem Cards - Refined for Premium Feel */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
     
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-    
-          {/* Problem Card 01 */}
-    
-          <div className="group flex flex-col gap-4 rounded-[2rem] bg-white/62 border border-white p-6 shadow-[0_10px_28px_-20px_rgba(15,23,42,0.24),inset_0_1px_0_white] hover:-translate-y-1 hover:bg-white/82 transition-all duration-300">
-    
-            <div className="w-11 h-11 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-500 shadow-[inset_0_1px_0_white]">
-    
-              <iconify-icon icon="solar:lightbulb-bolt-linear" style={{ strokeWidth: '1.5' }} className="text-2xl"></iconify-icon>
-    
+          {[
+            {
+              icon: "solar:leaf-linear",
+              title: "Decision Fatigue",
+              desc: "Wasting your best hours just deciding where to start. Shiro clears the fog by highlighting your true north."
+            },
+            {
+              icon: "solar:clapperboard-linear",
+              title: "Signal Chaos",
+              desc: "Important follow-ups lost in threads. Shiro extracts the signal and builds your day around it."
+            },
+            {
+              icon: "solar:ghost-linear",
+              title: "The Ghost Cost",
+              desc: "The mental weight of 'unfinished things.' Shiro tracks the loose ends so you can truly focus."
+            },
+            {
+              icon: "solar:link-broken-linear",
+              title: "Fragmented Focus",
+              desc: "Jumping between apps costs more than time—it costs flow. Shiro unifies your context in one place."
+            }
+          ].map((item, i) => (
+            <div key={i} className="group flex flex-col gap-6 rounded-[2.5rem] bg-white/40 backdrop-blur-xl border border-white p-8 shadow-[0_15px_35px_-15px_rgba(139,92,246,0.1),inset_0_1px_0_white] hover:border-violet-200 hover:-translate-y-1 transition-all duration-500">
+              <div className="w-12 h-12 rounded-2xl bg-violet-50 border border-violet-100 flex items-center justify-center text-violet-500 shadow-[inset_0_1px_0_white] group-hover:scale-110 transition-transform duration-500">
+                <iconify-icon icon={item.icon} style={{ strokeWidth: '1.5' }} className="text-2xl"></iconify-icon>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold tracking-tight text-slate-900">
+                  {item.title}
+                </h3>
+                <p className="mt-4 leading-relaxed text-sm font-light text-slate-500">
+                  {item.desc}
+                </p>
+              </div>
             </div>
-    
-            <div>
-    
-              <h3 className="text-lg font-normal tracking-tight text-slate-950">
-    
-                Ideas disappear
-    
-              </h3>
-    
-              <p className="mt-3 leading-7 text-sm font-light text-slate-600">
-    
-                Capture rough thoughts before they vanish between calls, commutes, and context switches.
-    
-              </p>
-    
-            </div>
-    
-          </div>
-    
-          {/* Problem Card 02 */}
-    
-          <div className="group flex flex-col gap-4 rounded-[2rem] bg-white/62 border border-white p-6 shadow-[0_10px_28px_-20px_rgba(15,23,42,0.24),inset_0_1px_0_white] hover:-translate-y-1 hover:bg-white/82 transition-all duration-300">
-    
-            <div className="w-11 h-11 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-500 shadow-[inset_0_1px_0_white]">
-    
-              <iconify-icon icon="solar:widget-5-linear" style={{ strokeWidth: '1.5' }} className="text-2xl"></iconify-icon>
-    
-            </div>
-    
-            <div>
-    
-              <h3 className="text-lg font-normal tracking-tight text-slate-950">
-    
-                Tasks scatter
-    
-              </h3>
-    
-              <p className="mt-3 leading-7 text-sm font-light text-slate-600">
-    
-                Turn notes, messages, and meeting details into clear next steps, reminders, and follow-ups.
-    
-              </p>
-    
-            </div>
-    
-          </div>
-    
-          {/* Problem Card 03 */}
-    
-          <div className="group flex flex-col gap-4 rounded-[2rem] bg-white/62 border border-white p-6 shadow-[0_10px_28px_-20px_rgba(15,23,42,0.24),inset_0_1px_0_white] hover:-translate-y-1 hover:bg-white/82 transition-all duration-300">
-    
-            <div className="w-11 h-11 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-500 shadow-[inset_0_1px_0_white]">
-    
-              <iconify-icon icon="solar:folder-with-files-linear" style={{ strokeWidth: '1.5' }} className="text-2xl"></iconify-icon>
-    
-            </div>
-    
-            <div>
-    
-              <h3 className="text-lg font-normal tracking-tight text-slate-950">
-    
-                Context piles up
-    
-              </h3>
-    
-              <p className="mt-3 leading-7 text-sm font-light text-slate-600">
-    
-                Summarize long notes, emails, documents, and links so you can understand what matters quickly.
-    
-              </p>
-    
-            </div>
-    
-          </div>
-    
-          {/* Problem Card 04 */}
-    
-          <div className="group flex flex-col gap-4 rounded-[2rem] bg-white/62 border border-white p-6 shadow-[0_10px_28px_-20px_rgba(15,23,42,0.24),inset_0_1px_0_white] hover:-translate-y-1 hover:bg-white/82 transition-all duration-300">
-    
-            <div className="w-11 h-11 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-500 shadow-[inset_0_1px_0_white]">
-    
-              <iconify-icon icon="solar:clock-circle-linear" style={{ strokeWidth: '1.5' }} className="text-2xl"></iconify-icon>
-    
-            </div>
-    
-            <div>
-    
-              <h3 className="text-lg font-normal tracking-tight text-slate-950">
-    
-                Organizing takes over
-    
-              </h3>
-    
-              <p className="mt-3 leading-7 text-sm font-light text-slate-600">
-    
-                Spend less time sorting work and more time deciding, creating, replying, and shipping.
-    
-              </p>
-    
-            </div>
-    
-          </div>
-    
+          ))}
         </div>
     
-        {/* Transformation Block */}
-    
-        <div className="overflow-hidden min-h-[560px] lg:min-h-[620px] rounded-[2.75rem] bg-gradient-to-b from-[#172033] to-[#101827] text-white border border-white/10 relative shadow-[0_40px_90px_-45px_rgba(15,23,42,0.78),inset_0_1px_0_rgba(255,255,255,0.14)]">
-    
-          {/* Dark Block Background Texture */}
-    
-          <div className="absolute inset-0 opacity-[0.10]" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
-          </div>
-    
-          <div className="absolute top-[-30%] right-[-10%] w-[32rem] h-[32rem] rounded-full bg-blue-400/18 blur-[6rem]"></div>
-    
-          <div className="absolute bottom-[-25%] left-[-12%] w-[28rem] h-[28rem] rounded-full bg-sky-300/10 blur-[5rem]"></div>
-    
-          <div className="absolute top-[20%] left-[42%] w-[18rem] h-[18rem] rounded-full bg-white/5 blur-[4rem]"></div>
-    
-          <div className="relative grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] min-h-[560px] lg:min-h-[620px] h-full">
+        {/* Transformation Block - The "Architecture" Visualization */}
+        <div className="overflow-hidden min-h-[600px] rounded-[3.5rem] bg-white/50 backdrop-blur-3xl text-slate-900 border border-white relative shadow-[0_50px_100px_-50px_rgba(139,92,246,0.2),inset_0_1px_0_white]">
+          
+          {/* Subtle Grid Overlay */}
+          <div className="absolute inset-0 opacity-[0.3]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(139,92,246,0.1) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
+          <div className="relative grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] min-h-[600px]">
     
             {/* Transformation Copy */}
+            <div className="flex flex-col justify-center p-8 md:p-14 lg:p-20 relative z-10">
+              <div className="inline-flex items-center gap-2 rounded-full bg-violet-100/50 border border-violet-200 px-3 py-1 mb-6">
+                <span className="font-mono text-[10px] font-bold text-violet-600 uppercase tracking-widest">
+                  The Transformation
+                </span>
+              </div>
     
-            <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16">
-    
-              <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-300 mb-4">
-    
-                HOW SHIRO CHANGES THINGS
-    
-              </p>
-    
-              <h2 className="md:text-4xl lg:text-5xl leading-tight text-3xl font-light text-white tracking-tight mb-6">
-    
-                From mental overload to a clean daily operating system.
-    
+              <h2 className="text-3xl md:text-5xl font-normal text-slate-950 tracking-tight leading-[1.1] mb-8">
+                From noise to 
+                <span className="block text-violet-600 italic font-serif">architecture.</span>
               </h2>
     
-              <p className="text-base leading-8 text-slate-300 font-light max-w-xl">
-    
-                Shiro reads every signal across your day, connects the dots,
-    
-                and gives you back a structured plan with priorities, follow-ups, and clear next actions.
-    
+              <p className="text-base md:text-lg leading-relaxed text-slate-500 font-light max-w-xl">
+                Shiro doesn't just "organize." It digests the complexity of your digital life and returns a structured environment where execution is the only option left.
               </p>
     
-              <div className="mt-10 flex flex-col sm:flex-row gap-3">
-    
-                <a href="#workflow" className="group flex items-center justify-center gap-3 bg-white hover:bg-slate-100 transition-all text-slate-900 text-sm font-normal rounded-full px-6 py-3 w-fit shadow-[inset_0_1px_0_white] hover:-translate-y-0.5">
-    
-                  <span>Explore Workflow</span>
-    
-                  <iconify-icon icon="solar:arrow-right-linear" style={{ strokeWidth: '1.5' }} className="text-lg group-hover:translate-x-1 transition-transform"></iconify-icon>
-    
+              <div className="mt-12 flex flex-col sm:flex-row gap-4">
+                <a href="#how-it-works" className="group flex items-center justify-center gap-3 bg-violet-600 hover:bg-violet-500 transition-all duration-500 text-white text-[15px] font-semibold rounded-full px-8 py-4 shadow-[0_15px_30px_-10px_rgba(139,92,246,0.4),inset_0_1px_1px_rgba(255,255,255,0.3)] hover:-translate-y-1">
+                  <span>See the Method</span>
+                  <iconify-icon icon="solar:arrow-right-bold" className="text-xl group-hover:translate-x-1.5 transition-transform"></iconify-icon>
                 </a>
-    
-                <a href="#pricing" className="group flex items-center justify-center gap-3 bg-white/[0.07] hover:bg-white/[0.1] transition-all text-white text-sm font-normal rounded-full px-6 py-3 w-fit border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
-    
-                  <span>Try SHIRO Free</span>
-    
+                <a href="#pricing" className="group flex items-center justify-center gap-3 bg-white/60 hover:bg-white transition-all duration-500 text-slate-900 text-[15px] font-semibold rounded-full px-8 py-4 border border-violet-100 shadow-[inset_0_1px_1px_white] hover:-translate-y-1">
+                  <span>Start Building</span>
                 </a>
-    
               </div>
-    
-              <div className="mt-12 pt-8 border-t border-white/10">
-    
-                <p className="text-xs text-white/50 uppercase tracking-widest mb-4 font-['JetBrains_Mono',monospace]">
-    
-                  Built for overthinkers
-    
-                </p>
-    
-                <div className="flex flex-wrap items-center gap-3 text-xs text-white/60">
-    
-                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">
-    
-                    Founders
-    
-                  </span>
-    
-                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">
-    
-                    Creators
-    
-                  </span>
-    
-                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">
-    
-                    Freelancers
-    
-                  </span>
-    
-                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">
-    
-                    Executives
-    
-                  </span>
-    
-                </div>
-    
-              </div>
-    
             </div>
     
-            {/* Input-to-Action Pipeline Visual */}
+            {/* The Pipeline Visual - Refined with better Glassmorphism */}
+            <div className="relative flex items-center justify-center p-6 md:p-12 lg:pr-20">
+              
+              {/* Outer Glow */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-violet-400/10 blur-[6rem] rounded-full pointer-events-none" />
+              <div className="relative w-full max-w-2xl rounded-[3rem] bg-white/[0.4] border border-white p-4 md:p-6 shadow-[inset_0_1px_1px_white,0_40px_80px_-40px_rgba(139,92,246,0.2)] backdrop-blur-2xl">
     
-            <div className="relative flex items-center justify-center p-6 md:p-10 lg:pr-14">
-    
-              {/* Pipeline Shell */}
-    
-              <div className="relative w-full max-w-2xl rounded-[2.25rem] bg-white/[0.065] border border-white/10 p-4 md:p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_30px_70px_-40px_rgba(0,0,0,0.72)] backdrop-blur-sm">
-    
-                {/* Inner Light Panel */}
-    
-                <div className="rounded-[1.85rem] bg-gradient-to-b from-white to-slate-100 text-slate-900 border border-white/80 overflow-hidden shadow-[0_18px_50px_-30px_rgba(0,0,0,0.55),inset_0_1px_0_white]">
+                <div className="rounded-[2.5rem] bg-white/[0.8] text-slate-900 border border-white overflow-hidden shadow-[0_20px_60px_-30px_rgba(139,92,246,0.25),inset_0_1px_1px_white]">
     
                   {/* Panel Top Bar */}
-    
-                  <div className="px-5 py-4 flex items-center justify-between border-b border-slate-200/80">
-    
+                  <div className="px-6 py-5 flex items-center justify-between border-b border-violet-100/40 bg-white/40">
                     <div className="flex items-center gap-2">
-    
-                      <span className="w-2.5 h-2.5 rounded-full bg-red-300"></span>
-    
-                      <span className="w-2.5 h-2.5 rounded-full bg-amber-300"></span>
-    
-                      <span className="w-2.5 h-2.5 rounded-full bg-emerald-300"></span>
-    
+                      <span className="w-2 h-2 rounded-full bg-red-400/30" />
+                      <span className="w-2 h-2 rounded-full bg-amber-400/30" />
+                      <span className="w-2 h-2 rounded-full bg-emerald-400/30" />
                     </div>
-    
-                    <div className="font-['JetBrains_Mono',monospace] text-xs text-slate-400 tracking-[-0.05em]">
-    
-                      INPUT → ACTION
-    
+                    <div className="font-mono text-[10px] text-violet-500 font-bold tracking-widest uppercase">
+                      Synthesis Pipeline
                     </div>
-    
                   </div>
     
-                  {/* Pipeline Content */}
-    
-                  <div className="p-5 md:p-6">
-    
-                    {/* Pipeline Header */}
-    
-                    <div className="flex items-start justify-between gap-4 mb-6">
-    
-                      <div>
-    
-                        <p className="text-xs text-slate-400 font-light mb-1">
-    
-                          SHIRO has organized your workspace
-    
-                        </p>
-    
-                        <h3 className="text-2xl md:text-3xl font-normal tracking-tight text-slate-950">
-    
-                          Everything became actionable.
-    
-                        </h3>
-    
-                      </div>
-    
-                      <div className="w-11 h-11 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 shadow-[inset_0_1px_0_white]">
-    
-                        <iconify-icon icon="solar:stars-linear" style={{ strokeWidth: '1.5' }} className="text-2xl"></iconify-icon>
-    
-                      </div>
-    
-                    </div>
-    
+                  <div className="p-6 md:p-8">
                     {/* Pipeline Grid */}
-    
-                    <div className="grid md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-5 items-stretch">
+                    <div className="grid md:grid-cols-[1fr_auto_1fr] gap-6 items-stretch">
     
                       {/* Inputs Column */}
-    
-                      <div className="rounded-[1.5rem] bg-slate-50 border border-slate-200 p-4 shadow-[inset_0_1px_0_white]">
-    
-                        <p className="font-['JetBrains_Mono',monospace] text-[10px] text-slate-400 uppercase tracking-widest mb-4">
-    
-                          Scattered inputs
-    
-                        </p>
-    
-                        <div className="space-y-3">
-    
-                          {/* Input 01 */}
-    
-                          <div className="flex items-center gap-3 rounded-2xl bg-white border border-slate-200 px-3 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
-    
-                            <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
-    
-                              <iconify-icon icon="solar:microphone-linear" style={{ strokeWidth: '1.5' }} className="text-base text-blue-500"></iconify-icon>
-    
+                      <div className="space-y-4">
+                        <p className="font-mono text-[9px] text-slate-400 uppercase tracking-[0.2em] mb-2 px-1">Raw Inputs</p>
+                        
+                        {[
+                          { icon: "solar:microphone-bold", title: "Voice Notes", sub: "Fragmented ideas" },
+                          { icon: "solar:letter-bold", title: "Slack/Email", sub: "Buried actions" },
+                          { icon: "solar:document-bold", title: "Docs/Briefs", sub: "Heavy context" }
+                        ].map((input, idx) => (
+                          <div key={idx} className="flex items-center gap-3 rounded-2xl bg-white border border-violet-50 p-3 shadow-[0_4px_12px_rgba(0,0,0,0.02),inset_0_1px_0_white] hover:border-violet-200 transition-colors">
+                            <div className="w-9 h-9 rounded-xl bg-violet-50 flex items-center justify-center text-violet-500 flex-shrink-0">
+                              <iconify-icon icon={input.icon} className="text-lg"></iconify-icon>
                             </div>
-    
                             <div>
-    
-                              <p className="text-xs font-normal text-slate-900">
-    
-                                Voice note
-    
-                              </p>
-    
-                              <p className="text-[11px] text-slate-400 font-light">
-    
-                                Rough idea captured
-    
-                              </p>
-    
+                              <p className="text-[11px] font-bold text-slate-900">{input.title}</p>
+                              <p className="text-[10px] text-slate-400 font-medium">{input.sub}</p>
                             </div>
-    
                           </div>
-    
-                          {/* Input 02 */}
-    
-                          <div className="flex items-center gap-3 rounded-2xl bg-white border border-slate-200 px-3 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
-    
-                            <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
-    
-                              <iconify-icon icon="solar:letter-linear" style={{ strokeWidth: '1.5' }} className="text-base text-blue-500"></iconify-icon>
-    
-                            </div>
-    
-                            <div>
-    
-                              <p className="text-xs font-normal text-slate-900">
-    
-                                Messages
-    
-                              </p>
-    
-                              <p className="text-[11px] text-slate-400 font-light">
-    
-                                Follow-ups buried
-    
-                              </p>
-    
-                            </div>
-    
-                          </div>
-    
-                          {/* Input 03 */}
-    
-                          <div className="flex items-center gap-3 rounded-2xl bg-white border border-slate-200 px-3 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
-    
-                            <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
-    
-                              <iconify-icon icon="solar:document-text-linear" style={{ strokeWidth: '1.5' }} className="text-base text-blue-500"></iconify-icon>
-    
-                            </div>
-    
-                            <div>
-    
-                              <p className="text-xs font-normal text-slate-900">
-    
-                                Documents
-    
-                              </p>
-    
-                              <p className="text-[11px] text-slate-400 font-light">
-    
-                                Too much context
-    
-                              </p>
-    
-                            </div>
-    
-                          </div>
-    
-                          {/* Input 04 */}
-    
-                          <div className="flex items-center gap-3 rounded-2xl bg-white border border-slate-200 px-3 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
-    
-                            <div className="w-8 h-8 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center">
-    
-                              <iconify-icon icon="solar:calendar-mark-linear" style={{ strokeWidth: '1.5' }} className="text-base text-slate-600"></iconify-icon>
-    
-                            </div>
-    
-                            <div>
-    
-                              <p className="text-xs font-normal text-slate-900">
-    
-                                Meetings
-    
-                              </p>
-    
-                              <p className="text-[11px] text-slate-400 font-light">
-    
-                                Decisions scattered
-    
-                              </p>
-    
-                            </div>
-    
-                          </div>
-    
-                        </div>
-    
+                        ))}
                       </div>
     
-                      {/* Connector Column */}
-    
-                      <div className="hidden md:flex flex-col items-center justify-center gap-3">
-    
-                        <div className="h-16 w-px bg-gradient-to-b from-transparent via-slate-300 to-transparent"></div>
-    
-                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-b from-blue-500 to-blue-600 border border-blue-700 flex items-center justify-center text-white shadow-[0_10px_24px_rgba(59,130,246,0.28),inset_0_1px_0_rgba(255,255,255,0.35)]">
-    
-                          <iconify-icon icon="solar:alt-arrow-right-linear" style={{ strokeWidth: '1.5' }} className="text-2xl"></iconify-icon>
-    
+                      {/* Core Logic Visualizer */}
+                      <div className="hidden md:flex flex-col items-center justify-center gap-4 py-4">
+                        <div className="h-full w-px bg-gradient-to-b from-transparent via-violet-200/50 to-transparent" />
+                        <div className="w-14 h-14 rounded-2xl bg-violet-600 border border-violet-400 flex items-center justify-center text-white shadow-[0_20px_40px_-10px_rgba(139,92,246,0.4),inset_0_1px_0_rgba(255,255,255,0.3)] animate-pulse">
+                          <iconify-icon icon="solar:magic-stick-bold" className="text-3xl"></iconify-icon>
                         </div>
-    
-                        <div className="h-16 w-px bg-gradient-to-b from-transparent via-slate-300 to-transparent"></div>
-    
+                        <div className="h-full w-px bg-gradient-to-b from-transparent via-violet-200/50 to-transparent" />
                       </div>
     
                       {/* Outputs Column */}
-    
-                      <div className="rounded-[1.5rem] bg-gradient-to-b from-[#172033] to-[#101827] text-white border border-white/10 p-4 shadow-[0_12px_30px_-20px_rgba(15,23,42,0.65),inset_0_1px_0_rgba(255,255,255,0.1)]">
-    
-                        <p className="font-['JetBrains_Mono',monospace] text-[10px] text-blue-300 uppercase tracking-widest mb-4">
-    
-                          Clear action
-    
-                        </p>
-    
-                        <div className="space-y-3">
-    
-                          <div className="rounded-2xl bg-white/8 border border-white/10 px-3 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
-    
-                            <div className="flex items-center justify-between gap-3">
-    
-                              <div className="flex items-center gap-3">
-    
-                                <span className="w-2 h-2 rounded-full bg-blue-400"></span>
-    
-                                <p className="text-xs font-normal text-white">
-    
-                                  Priorities ranked
-    
-                                </p>
-    
-                              </div>
-    
-                              <span className="text-[10px] text-blue-200 bg-blue-400/10 border border-blue-300/10 rounded-full px-2 py-1">
-    
-                                3
-    
-                              </span>
-    
+                      <div className="space-y-4">
+                        <p className="font-mono text-[9px] text-violet-500 uppercase tracking-[0.2em] mb-2 px-1">Architected Output</p>
+                        
+                        <div className="rounded-2xl bg-violet-50/50 border border-violet-100 p-4 shadow-[inset_0_1px_0_white]">
+                          <div className="space-y-3">
+                            <div className="flex items-center justify-between text-[11px] font-bold text-slate-900 bg-white/60 px-3 py-2 rounded-xl border border-white">
+                              <span>Priorities Ranked</span>
+                              <span className="text-violet-600">3</span>
                             </div>
-    
-                          </div>
-    
-                          <div className="rounded-2xl bg-white/8 border border-white/10 px-3 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
-    
-                            <div className="flex items-center justify-between gap-3">
-    
-                              <div className="flex items-center gap-3">
-    
-                                <span className="w-2 h-2 rounded-full bg-blue-400"></span>
-    
-                                <p className="text-xs font-normal text-white">
-    
-                                  Follow-ups found
-    
-                                </p>
-    
-                              </div>
-    
-                              <span className="text-[10px] text-blue-200 bg-blue-400/10 border border-blue-300/10 rounded-full px-2 py-1">
-    
-                                5
-    
-                              </span>
-    
+                            <div className="flex items-center justify-between text-[11px] font-bold text-slate-900 bg-white/60 px-3 py-2 rounded-xl border border-white">
+                              <span>Action Recovered</span>
+                              <span className="text-violet-600">12</span>
                             </div>
-    
                           </div>
-    
-                          <div className="rounded-2xl bg-white/8 border border-white/10 px-3 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
-    
-                            <div className="flex items-center justify-between gap-3">
-    
-                              <div className="flex items-center gap-3">
-    
-                                <span className="w-2 h-2 rounded-full bg-blue-400"></span>
-    
-                                <p className="text-xs font-normal text-white">
-    
-                                  Summaries ready
-    
-                                </p>
-    
-                              </div>
-    
-                              <span className="text-[10px] text-blue-200 bg-blue-400/10 border border-blue-300/10 rounded-full px-2 py-1">
-    
-                                4
-    
-                              </span>
-    
+                          
+                          <div className="mt-5 rounded-2xl bg-gradient-to-br from-violet-600 to-purple-700 p-4 shadow-xl shadow-violet-200">
+                            <div className="flex items-center gap-3 mb-2">
+                              <iconify-icon icon="solar:calendar-date-bold" className="text-xl text-white"></iconify-icon>
+                              <p className="text-[11px] font-bold text-white uppercase tracking-wider">The Plan</p>
                             </div>
-    
-                          </div>
-    
-                          <div className="rounded-2xl bg-gradient-to-b from-blue-400 to-blue-600 border border-blue-700 px-3 py-3 shadow-[0_10px_22px_-14px_rgba(59,130,246,0.7),inset_0_1px_0_rgba(255,255,255,0.25)]">
-    
-                            <div className="flex items-center gap-3">
-    
-                              <iconify-icon icon="solar:checklist-minimalistic-linear" style={{ strokeWidth: '1.5' }} className="text-lg text-white"></iconify-icon>
-    
-                              <div>
-    
-                                <p className="text-xs font-normal text-white">
-    
-                                  Daily brief generated
-    
-                                </p>
-    
-                                <p className="text-[11px] text-blue-100 font-light mt-0.5">
-    
-                                  Ready before your first meeting
-    
-                                </p>
-    
-                              </div>
-    
-                            </div>
-    
-                          </div>
-    
-                        </div>
-    
-                      </div>
-    
-                    </div>
-    
-                    {/* Bottom Summary Bar */}
-    
-                    <div className="mt-4 rounded-2xl bg-white border border-slate-200 px-4 py-3 shadow-[0_2px_8px_rgba(15,23,42,0.03),inset_0_1px_0_white]">
-    
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-    
-                        <div className="flex items-center gap-3">
-    
-                          <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center">
-    
-                            <iconify-icon icon="solar:shield-check-linear" style={{ strokeWidth: '1.5' }} className="text-base text-blue-500"></iconify-icon>
-    
-                          </div>
-    
-                          <div>
-    
-                            <p className="text-xs font-normal text-slate-900">
-    
-                              Private memory used
-    
+                            <p className="text-[10px] text-violet-100 leading-relaxed font-medium">
+                              Optimal focus windows secured. Ready to execute.
                             </p>
-    
-                            <p className="text-[11px] text-slate-400 font-light">
-    
-                              Only the context you control
-    
-                            </p>
-    
                           </div>
-    
                         </div>
-    
-                        <div className="flex items-center gap-2 text-[11px] text-slate-400">
-    
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-    
-                          9 actions organized
-    
-                        </div>
-    
                       </div>
-    
                     </div>
-    
                   </div>
-    
                 </div>
-    
-                {/* Floating Mini Status Card */}
-    
-                <div className="hidden md:block absolute -right-3 top-16 rounded-2xl bg-white/90 backdrop-blur border border-white px-4 py-3 shadow-[0_18px_38px_-20px_rgba(15,23,42,0.45),inset_0_1px_0_white]">
-    
+                {/* Floating Status Widgets */}
+                <div className="absolute -right-4 top-24 rounded-2xl bg-white border border-slate-100 px-4 py-3 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1),inset_0_1px_0_white] hidden lg:block">
                   <div className="flex items-center gap-3">
-    
-                    <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
-    
-                      <iconify-icon icon="solar:bolt-circle-linear" style={{ strokeWidth: '1.5' }} className="text-lg text-blue-500"></iconify-icon>
-    
+                    <div className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-500">
+                      <iconify-icon icon="solar:check-circle-bold" className="text-lg"></iconify-icon>
                     </div>
-    
-                    <div>
-    
-                      <p className="text-xs text-slate-900 font-normal">
-    
-                        Signal detected
-    
-                      </p>
-    
-                      <p className="text-xs text-slate-400 font-light">
-    
-                        Follow-up hidden in email
-    
-                      </p>
-    
-                    </div>
-    
+                    <p className="text-[11px] text-slate-600 font-bold">14 Pings Silenced</p>
                   </div>
-    
                 </div>
-    
-                {/* Floating Mini Status Card */}
-    
-                <div className="hidden md:block absolute -left-6 -bottom-4 rounded-2xl bg-white/90 backdrop-blur border border-white px-4 py-3 shadow-[0_18px_38px_-20px_rgba(15,23,42,0.45),inset_0_1px_0_white]">
-    
+                <div className="absolute -left-8 bottom-12 rounded-2xl bg-white border border-slate-100 px-4 py-3 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1),inset_0_1px_0_white] hidden lg:block">
                   <div className="flex items-center gap-3">
-    
-                    <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center">
-    
-                      <iconify-icon icon="solar:check-circle-linear" style={{ strokeWidth: '1.5' }} className="text-lg text-blue-500"></iconify-icon>
-    
+                    <div className="w-8 h-8 rounded-full bg-violet-50 flex items-center justify-center text-violet-500">
+                      <iconify-icon icon="solar:bolt-bold" className="text-lg"></iconify-icon>
                     </div>
-    
-                    <div>
-    
-                      <p className="text-xs text-slate-900 font-normal">
-    
-                        Clarity created
-    
-                      </p>
-    
-                      <p className="text-xs text-slate-400 font-light">
-    
-                        Priorities, replies, tasks
-    
-                      </p>
-    
-                    </div>
-    
+                    <p className="text-[11px] text-slate-600 font-bold">Flow state secured</p>
                   </div>
-    
                 </div>
-    
               </div>
-    
             </div>
-    
-            {/* End Pipeline Visual */}
-    
           </div>
-    
         </div>
-    
       </div>
-    
     </section>
-
   );
 };

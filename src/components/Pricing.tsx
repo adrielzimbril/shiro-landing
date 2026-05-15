@@ -1,390 +1,155 @@
 "use client";
-import React from 'react';
-
+import React, { useState } from 'react';
 
 export const Pricing = () => {
+  const [isYearly, setIsYearly] = useState(false);
+
+  const plans = [
+    {
+      name: "Starter",
+      price: isYearly ? 12 : 15,
+      desc: "For individuals who want to eliminate daily friction and find clarity.",
+      features: [
+        "Personal daily brief",
+        "Quick capture voice & text",
+        "Basic task recovery",
+        "Private memory controls"
+      ],
+      icon: "solar:check-circle-linear",
+      cta: "Get Started"
+    },
+    {
+      name: "Pro",
+      price: isYearly ? 45 : 65,
+      desc: "For deep work practitioners who need proactive focus assistance.",
+      features: [
+        "Everything in Starter",
+        "Smart daily scheduling",
+        "Proactive focus modes",
+        "Cognitive load balancing",
+        "Extended private memory"
+      ],
+      icon: "solar:stars-linear",
+      featured: true,
+      cta: "Start Free Trial"
+    },
+    {
+      name: "Team",
+      price: isYearly ? 199 : 249,
+      desc: "For high-performance teams that execute with unified context.",
+      features: [
+        "Everything in Pro",
+        "Shared team memory",
+        "Team velocity briefs",
+        "Admin accountability tools",
+        "Priority dedicated support"
+      ],
+      icon: "solar:buildings-2-linear",
+      cta: "Contact Sales"
+    }
+  ];
+
   return (
-    <section id="pricing" className="max-w-7xl mx-auto px-6 py-20">
-
-  <div className="text-center max-w-5xl mx-auto mb-14">
-  
-    <p className="font-['JetBrains_Mono',monospace] text-xs font-medium tracking-[-0.04em] text-blue-500 mb-4">
-  
-      PRICING
-  
-    </p>
-  
-    <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal tracking-tight text-slate-950 leading-[1.05] max-w-5xl mx-auto">
-  
-      Start free. Upgrade
-  
-      <span className="block">when you’re ready.</span>
-  
-    </h2>
-  
-    <p className="mt-6 text-base md:text-lg leading-8 text-slate-600 font-light max-w-3xl mx-auto">
-  
-      Every plan gives you a calmer, more organized day. The more context Shiro
-  
-      captures, the more powerful your daily brief becomes.
-  
-    </p>
-  
-  </div>
-
-    {/* Skeuomorphic Toggle */}
-    
-    <div className="mb-12 flex justify-center">
-    
-      <label className="relative flex items-center p-1 bg-[#e2e8f0] rounded-full cursor-pointer w-[16rem] shadow-[inset_0_2px_4px_rgba(0,0,0,0.06),0_1px_1px_rgba(255,255,255,1)] border border-slate-300">
-    
-    
-    
-        <input type="checkbox" id="toggle-checkbox" className="sr-only" onChange={() => {}} />
-    
-        {/* Toggle Pill */}
-    
-        <div id="toggle-pill" className="absolute left-1 top-1 bottom-1 w-[calc(50%-0.25rem)] bg-gradient-to-b from-white to-slate-50 rounded-full shadow-[0_2px_5px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,1)] border border-slate-200 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
-    
+    <section id="pricing" className="max-w-7xl mx-auto px-6 py-24">
+      {/* Section Header */}
+      <div className="text-center max-w-5xl mx-auto mb-16">
+        <div className="inline-flex items-center gap-2 rounded-full bg-violet-50 border border-violet-100 px-3 py-1 mb-6 shadow-[inset_0_1px_0_white]">
+          <span className="w-1.5 h-1.5 rounded-full bg-violet-500 shadow-[0_0_8px_rgba(139,92,246,0.4)]" />
+          <p className="font-['JetBrains_Mono',monospace] text-[10px] font-medium tracking-tight text-violet-500 uppercase">
+            PRICING
+          </p>
         </div>
-    
-        <span id="label-mo" className="relative w-1/2 text-center text-xs text-slate-800 font-normal transition-colors duration-300 py-2.5 z-10">
-    
-          Monthly
-    
-        </span>
-    
-        <span id="label-yr" className="relative w-1/2 flex items-center justify-center gap-1.5 text-center text-xs text-slate-400 font-normal transition-colors duration-300 py-2.5 z-10">
-    
-          Annually
-    
-        </span>
-    
-      </label>
-    
-    </div>
+        <h2 className="text-4xl md:text-5xl lg:text-7xl font-normal tracking-[-0.04em] text-slate-950 leading-[0.95] max-w-5xl mx-auto">
+          Start free. Upgrade
+          <span className="block text-slate-400">when you’re ready.</span>
+        </h2>
+        <p className="mt-8 text-lg md:text-xl leading-8 text-slate-500 font-light max-w-3xl mx-auto">
+          Every plan gives you a calmer, more organized day. The more context Shiro
+          captures, the more powerful your daily brief becomes.
+        </p>
+      </div>
 
-
-  {/* Cards Container */}
-
-  <div className="flex flex-col lg:flex-row items-stretch justify-center gap-8 w-full max-w-5xl mx-auto">
-
-    {/* Card 1: Starter */}
-
-    <div className="relative w-full lg:w-1/3 rounded-[2rem] bg-[#f8fafc] border border-white shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06),inset_0_2px_0_rgba(255,255,255,1)] transition-all duration-500 hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1),inset_0_2px_0_rgba(255,255,255,1)] hover:-translate-y-1">
-
-      <div className="p-8 h-full flex flex-col">
-
-        {/* Header */}
-
-        <div className="flex justify-between items-start">
-
-          <div>
-
-            <h3 className="text-xs font-medium text-slate-400 uppercase tracking-widest mb-4">
-
-              Starter
-
-            </h3>
-
-            <div className="flex items-baseline text-slate-800">
-
-              <span className="text-4xl font-normal tracking-tight">$</span>
-
-              <span className="text-5xl font-normal tracking-tight price-val" data-monthly="15" data-yearly="12">15</span>
-
-              <span className="text-xs font-light text-slate-400 ml-1">/mo</span>
-
-            </div>
-
-            <p className="mt-4 text-xs font-light text-slate-500 leading-relaxed">
-
-              For individuals who want a calmer way to capture ideas, notes, and daily priorities.
-
-            </p>
-
-          </div>
-
-          <div className="w-11 h-11 min-w-11 min-h-11 shrink-0 rounded-2xl bg-gradient-to-b from-white to-slate-50 shadow-[0_6px_16px_rgba(15,23,42,0.08),inset_0_1px_0_white] flex items-center justify-center text-slate-400 border border-slate-200">
-            <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="block text-[22px] leading-none"></iconify-icon>
-          </div>
-
-        </div>
-
-        {/* Expanded Body */}
-
-        <div className="pt-6 flex flex-col gap-6 flex-1">
-
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
-
-          <ul className="flex flex-col gap-y-3 flex-grow">
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Personal daily brief
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Voice notes and quick capture
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Basic summaries and reminders
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Private memory controls
-
-            </li>
-
-          </ul>
-
-          <button className="mt-2 w-full py-3 rounded-xl bg-gradient-to-b from-white to-slate-50 border border-slate-200 text-slate-700 font-normal text-xs shadow-[0_2px_4px_rgba(0,0,0,0.02),inset_0_1px_0_white] hover:from-slate-50 hover:to-slate-100 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] transition-all">
-
-            Get Started
-
+      {/* Toggle */}
+      <div className="mb-16 flex justify-center">
+        <div className="p-1.5 bg-slate-100 rounded-2xl flex items-center gap-1 border border-slate-200/50 shadow-inner">
+          <button 
+            onClick={() => setIsYearly(false)}
+            className={`px-6 py-2.5 rounded-xl text-sm font-medium transition-all ${
+              !isYearly ? "bg-white text-slate-950 shadow-sm border border-slate-200" : "text-slate-500 hover:text-slate-700"
+            }`}
+          >
+            Monthly
           </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    {/* Card 2: Pro */}
-
-    <div className="relative w-full lg:w-1/3 rounded-[2rem] bg-gradient-to-b from-blue-50/50 to-[#f8fafc] border border-white shadow-[0_15px_35px_-10px_rgba(59,130,246,0.15),inset_0_2px_0_rgba(255,255,255,1)] transition-all duration-500 hover:shadow-[0_25px_50px_-12px_rgba(59,130,246,0.2),inset_0_2px_0_rgba(255,255,255,1)] hover:-translate-y-1">
-
-      {/* Floating Badge */}
-
-      <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-gradient-to-b from-blue-400 to-blue-500 text-white text-[0.65rem] font-medium rounded-full shadow-[0_2px_6px_rgba(59,130,246,0.4),inset_0_1px_0_rgba(255,255,255,0.4)] border border-blue-600 tracking-wide z-10">
-
-        Recommended
-
-      </div>
-
-      <div className="p-8 h-full flex flex-col">
-
-        {/* Header */}
-
-        <div className="flex justify-between items-start pt-2">
-
-          <div>
-
-            <h3 className="text-xs font-medium text-blue-500 uppercase tracking-widest mb-4">
-
-              Pro
-
-            </h3>
-
-            <div className="flex items-baseline text-slate-800">
-
-              <span className="text-4xl font-normal tracking-tight">$</span>
-
-              <span className="text-5xl font-normal tracking-tight price-val" data-monthly="65" data-yearly="45">65</span>
-
-              <span className="text-xs font-light text-slate-400 ml-1">/mo</span>
-
-            </div>
-
-            <p className="mt-4 text-xs font-light text-slate-500 leading-relaxed">
-
-              For busy professionals who want deeper context, faster summaries, and stronger daily execution.
-
-            </p>
-
-          </div>
-
-          <div className="w-11 h-11 min-w-11 min-h-11 shrink-0 rounded-2xl bg-gradient-to-b from-white to-blue-50 shadow-[0_6px_16px_rgba(59,130,246,0.12),inset_0_1px_0_white] flex items-center justify-center text-blue-500 border border-blue-100">
-            <iconify-icon icon="solar:stars-linear" style={{"strokeWidth":"1.5"}} className="block text-[22px] leading-none"></iconify-icon>
-          </div>
-
-        </div>
-
-        {/* Expanded Body */}
-
-        <div className="pt-6 flex flex-col gap-6 flex-1">
-
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
-
-          <ul className="flex flex-col gap-y-3 flex-grow">
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-700">
-
-              <iconify-icon icon="solar:check-circle-linear" className="text-blue-500 text-lg"></iconify-icon>
-
-              Everything in Starter
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-700">
-
-              <iconify-icon icon="solar:check-circle-bold" className="text-blue-500 text-lg"></iconify-icon>
-
-              Advanced document summaries
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-700">
-
-              <iconify-icon icon="solar:check-circle-bold" className="text-blue-500 text-lg"></iconify-icon>
-
-              Suggested replies and action recovery
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-700">
-
-              <iconify-icon icon="solar:check-circle-bold" className="text-blue-500 text-lg"></iconify-icon>
-
-              Priority and focus window planning
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-700">
-
-              <iconify-icon icon="solar:check-circle-bold" className="text-blue-500 text-lg"></iconify-icon>
-
-              Extended private memory
-
-            </li>
-
-          </ul>
-
-          <button className="mt-2 w-full py-3 rounded-xl bg-gradient-to-b from-blue-500 to-blue-600 border border-blue-700 text-white font-normal text-xs shadow-[0_4px_10px_rgba(59,130,246,0.3),inset_0_1px_0_rgba(255,255,255,0.3)] hover:from-blue-400 hover:to-blue-500 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all">
-
-            Start Free Trial
-
+          <button 
+            onClick={() => setIsYearly(true)}
+            className={`px-6 py-2.5 rounded-xl text-sm font-medium transition-all flex items-center gap-2 ${
+              isYearly ? "bg-white text-slate-950 shadow-sm border border-slate-200" : "text-slate-500 hover:text-slate-700"
+            }`}
+          >
+            Yearly
+            <span className="text-[10px] bg-violet-100 text-violet-600 px-2 py-0.5 rounded-full">Save 20%</span>
           </button>
-
         </div>
-
       </div>
 
-    </div>
+      {/* Cards */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+        {plans.map((plan, i) => (
+          <div 
+            key={i} 
+            className={`relative rounded-[3rem] p-px transition-all duration-500 hover:-translate-y-2 ${
+              plan.featured 
+                ? "bg-gradient-to-b from-violet-400 to-violet-600 shadow-[0_40px_80px_-20px_rgba(139,92,246,0.3)]" 
+                : "bg-white/40 backdrop-blur-xl border border-white shadow-[0_20px_40px_-20px_rgba(15,23,42,0.1)]"
+            }`}
+          >
+            {plan.featured && (
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-violet-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-full shadow-lg border border-violet-500 z-10 uppercase tracking-widest">
+                Recommended
+              </div>
+            )}
+            
+            <div className={`h-full rounded-[2.95rem] p-10 flex flex-col ${
+              plan.featured ? "bg-white" : "bg-transparent"
+            }`}>
+              <div className="mb-8">
+                <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-6 ${
+                  plan.featured ? "bg-violet-50 border border-violet-100" : "bg-white border border-slate-100 shadow-sm"
+                }`}>
+                  <iconify-icon icon={plan.icon} className={`text-2xl ${plan.featured ? "text-violet-500" : "text-slate-400"}`} />
+                </div>
+                <h3 className="text-xl font-medium text-slate-950 mb-2">{plan.name}</h3>
+                <div className="flex items-baseline gap-1 mb-4">
+                  <span className="text-4xl font-normal tracking-tight text-slate-950">${plan.price}</span>
+                  <span className="text-slate-500 text-sm">/mo</span>
+                </div>
+                <p className="text-sm leading-relaxed text-slate-500 font-light">
+                  {plan.desc}
+                </p>
+              </div>
 
-    {/* Card 3: Team */}
+              <div className="h-px w-full bg-slate-100/50 mb-8" />
 
-    <div className="relative w-full lg:w-1/3 rounded-[2rem] bg-[#f8fafc] border border-white shadow-[0_10px_30px_-10px_rgba(0,0,0,0.06),inset_0_2px_0_rgba(255,255,255,1)] transition-all duration-500 hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1),inset_0_2px_0_rgba(255,255,255,1)] hover:-translate-y-1">
+              <ul className="space-y-4 mb-10 flex-grow">
+                {plan.features.map((feat, idx) => (
+                  <li key={idx} className="flex items-start gap-3 text-sm text-slate-600 font-light">
+                    <iconify-icon icon="solar:check-circle-bold" className="text-violet-500 mt-0.5" />
+                    {feat}
+                  </li>
+                ))}
+              </ul>
 
-      <div className="p-8 h-full flex flex-col">
-
-        {/* Header */}
-
-        <div className="flex justify-between items-start">
-
-          <div>
-
-            <h3 className="text-xs font-medium text-slate-400 uppercase tracking-widest mb-4">
-
-              Team
-
-            </h3>
-
-            <div className="flex items-baseline text-slate-800">
-
-              <span className="text-4xl font-normal tracking-tight">$</span>
-
-              <span className="text-5xl font-normal tracking-tight price-val" data-monthly="249" data-yearly="199">249</span>
-
-              <span className="text-xs font-light text-slate-400 ml-1">/mo</span>
-
+              <button className={`w-full py-4 rounded-2xl text-sm font-medium transition-all ${
+                plan.featured 
+                  ? "bg-violet-600 text-white shadow-lg shadow-violet-200 hover:bg-violet-500 hover:shadow-violet-300" 
+                  : "bg-slate-900 text-white hover:bg-slate-800 shadow-lg shadow-slate-200"
+              }`}>
+                {plan.cta}
+              </button>
             </div>
-
-            <p className="mt-4 text-xs font-light text-slate-500 leading-relaxed">
-
-              For teams that need shared context, stronger controls, and reliable execution across projects.
-
-            </p>
-
           </div>
-
-          <div className="w-11 h-11 min-w-11 min-h-11 shrink-0 rounded-2xl bg-gradient-to-b from-white to-slate-50 shadow-[0_6px_16px_rgba(15,23,42,0.08),inset_0_1px_0_white] flex items-center justify-center text-slate-400 border border-slate-200">
-          
-            <iconify-icon icon="solar:buildings-2-linear" style={{"strokeWidth":"1.5"}} className="block text-[22px] leading-none"></iconify-icon>
-          
-          </div>
-
-        </div>
-
-        {/* Expanded Body */}
-
-        <div className="pt-6 flex flex-col gap-6 flex-1">
-
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
-
-          <ul className="flex flex-col gap-y-3 flex-grow">
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Everything in Pro
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Shared workspace memory
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Team summaries and briefings
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Admin controls and permissions
-
-            </li>
-
-            <li className="flex items-center gap-3 text-xs font-light text-slate-600">
-
-              <iconify-icon icon="solar:check-circle-linear" style={{"strokeWidth":"1.5"}} className="text-blue-400 text-lg"></iconify-icon>
-
-              Priority support
-
-            </li>
-
-          </ul>
-
-          <button className="mt-2 w-full py-3 rounded-xl bg-gradient-to-b from-white to-slate-50 border border-slate-200 text-slate-700 font-normal text-xs shadow-[0_2px_4px_rgba(0,0,0,0.02),inset_0_1px_0_white] hover:from-slate-50 hover:to-slate-100 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] transition-all">
-
-            Contact Sales
-
-          </button>
-
-        </div>
-
+        ))}
       </div>
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
   );
 }
